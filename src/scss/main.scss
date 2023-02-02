@@ -3,9 +3,10 @@
 @import 'core/mixins';
 @import 'core/animations';
 @import 'layout/header';
-@import 'layout/foto';
-@import 'layout/diseña';
-@import 'layout/rellena';
-@import 'layout/comparte';
+@import 'layout/preview';
+@import 'layout/design';
+@import 'layout/fill';
+@import 'layout/share';
 @import 'layout/footer';
 @import 'pages/index';
+@import 'pages/create-card';
