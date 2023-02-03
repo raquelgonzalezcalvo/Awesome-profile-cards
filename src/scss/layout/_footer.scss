@@ -5,11 +5,17 @@
     align-items: center;
     height: 110px;
     row-gap: 12px;
-    border-top: solid 1px #d8d8d8;
+    border-top: solid 1px $color--white-three;
+    @include tablet {
+        flex-direction: row;
+        justify-content: space-between;
+        height: 60px;
+        padding: 0 40px 0 40px;
+    }
     &--name-app {
-        font-family: 'Open Sans', sans-serif;
+        font: $font-opensans-regular-14;
         font-size: 14px;
-        color: #6b6b6b;
+        color: $color--brownish-grey;
         line-height: 20px;
         opacity: 0.5;
     }
