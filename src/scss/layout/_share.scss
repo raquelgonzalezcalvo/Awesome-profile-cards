@@ -9,9 +9,9 @@
     //margin-left: auto;
     //margin-right: auto;
 
-    @mixin tablet {
+    @include tablet {
         padding: 0 30px 10px 40px;
-        width: 100%;
+        //width: auto;
     }
 
     &--div {
@@ -100,19 +100,19 @@
 //     share--target: hidden;
 // }
 
-@media all and (min-width: 1204px) {
+@include desktop {
     .share--target {
         display: none;
     }
-        .share--target--div {
-            display: none;
-        }
-        .share--target--div--button {
-            display: none;
-        }
-    .icon {
-        display: none;
-    }    
+    //     .share--target--div {
+    //         display: none;
+    //     }
+    //     .share--target--div--button {
+    //         display: none;
+    //     }
+    // .icon {
+    //     display: none;
+    // }    
 }
 
 
