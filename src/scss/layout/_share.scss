@@ -8,6 +8,12 @@
     //flex-direction: column;
     //margin-left: auto;
     //margin-right: auto;
+
+    @mixin tablet {
+        padding: 0 30px 10px 40px;
+        width: 100%;
+    }
+
     &--div {
         //margin-top: 10px;
         display: flex;
@@ -90,6 +96,9 @@
     }
 }
 
+@mixin desktop {
+    
+}
 
 // .share {
 //     background-color: aquamarine;

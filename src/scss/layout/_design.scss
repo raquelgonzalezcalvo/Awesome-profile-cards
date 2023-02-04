@@ -4,6 +4,9 @@
     padding: 0 20px 0 20px;
     font-weight: 700; //MIRAR ZEPLIN VARIABLE
     background-color: $color--white-two;
+    @mixin tablet () {
+        padding: 0 30px 0 40px;
+    }
     &--div {
         display: flex;
         //justify-content: space-between; //take a look
@@ -63,6 +66,9 @@
             display: flex;
             margin-bottom: 15px;
             margin-left: 20px;
+            @mixin tablet {
+                padding-left: 0;
+            }
             &--1 {
                 grid-column: 2/3;
                 grid-row: 1/2;
