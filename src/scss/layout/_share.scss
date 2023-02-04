@@ -1,0 +1,91 @@
+.share {
+    //display: flex;
+    // font-weight: 700; //MIRAR ZEPLIN VARIABLE
+    background-color: $color--white-two;
+    padding: 0 20px 10px 20px;
+    margin-top: 10px;
+    // display: flex;
+    //flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    &--div {
+        //margin-top: 10px;
+        display: flex;
+        //flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        //margin-bottom: 30px;
+        //align-items: center;
+        //margin-right: 100px;
+        padding: auto;
+        padding-top: 10px;
+        border: 5px solid black; 
+        &--span {
+            // display: flex;
+            // align-items: center;
+            //gap: 12px;
+            display: flex;
+            width: 100%;
+            //margin-bottom: 5px;
+            //padding-bottom: px;
+            &--icon {
+                color: $color--dull-orange;
+                width: 21px;
+                height: 18px;
+                //margin-top: 28px;
+                margin-left: -20px;
+            }
+            &--legend {
+                //display: flex;
+                //flex-direction: row;
+                font: $font-opensans-semibold-18;
+                text-transform: uppercase;
+                color: $color--gunmetal;
+                //width: 32px;
+                height: 10px;
+                padding: 0 15px 15px 0;
+            }
+        }    
+        &--arrow {
+            width: 16px;
+            height: 18px;
+            color: $color--gunmetal;
+            font-size: 18px;
+            padding-top: 5px;
+            //padding-left: 50px;
+        }   
+    }
+    &--target {
+        display: flex;
+        // grid-template-columns: 1fr 1fr;
+        // grid-template-rows: auto auto auto;
+        // margin-bottom: 20px;
+        // gap: 5px;
+        align-items: center;
+        flex-direction: column;
+        &--div {
+            background-color: $color--dull-orange; 
+            color: white; //zeplin
+            margin-bottom: 30px;
+            margin-top: 33px;
+            padding: 13px 18px 13px 17px;
+            border-radius: 12px;
+            font-weight: 600; //zeplin font
+            box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+            .icon {
+                font: $font-opensans-regular-14; //zeplin
+                color: white; //zeplin
+                margin-right: 9px;
+            }
+            &--button {
+                font-size: 18px; //zeplin
+                text-transform: uppercase;
+                border: 0px solid transparent;
+                background-color: inherit;
+                color: inherit;
+                padding: 2px;
+                border-radius: 12px;
+            }
+        }    
+        }
+    }
