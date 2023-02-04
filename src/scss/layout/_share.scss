@@ -6,8 +6,8 @@
     margin-top: 10px;
     // display: flex;
     //flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
+    //margin-left: auto;
+    //margin-right: auto;
     &--div {
         //margin-top: 10px;
         display: flex;
@@ -19,7 +19,6 @@
         //margin-right: 100px;
         padding: auto;
         padding-top: 10px;
-        border: 5px solid black; 
         &--span {
             // display: flex;
             // align-items: center;
@@ -32,6 +31,7 @@
                 color: $color--dull-orange;
                 width: 21px;
                 height: 18px;
+                font-size: 18px;
                 //margin-top: 28px;
                 margin-left: -20px;
             }
@@ -73,12 +73,12 @@
             font-weight: 600; //zeplin font
             box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
             .icon {
-                font: $font-opensans-regular-14; //zeplin
-                color: white; //zeplin
                 margin-right: 9px;
+                font-size: 22px;
+                color: $color--white-two;
             }
             &--button {
-                font-size: 18px; //zeplin
+                font: $font-opensans-semibold-18;
                 text-transform: uppercase;
                 border: 0px solid transparent;
                 background-color: inherit;
@@ -87,5 +87,42 @@
                 border-radius: 12px;
             }
         }    
-        }
     }
+}
+
+
+// .share {
+//     background-color: aquamarine;
+//     width: 280px;
+//     border: 0;
+//     //border-bottom: 1px;
+//     //border-color: red
+//     border-bottom: 1px solid greenyellow;
+//     &--div {
+//         margin-top: 10px;
+//         display: flex;
+//         justify-content: space-between;
+//         margin-bottom: 30px;
+//         align-items: center;
+//         &--span {
+//             display: flex;
+//             align-items: center;
+//             gap: 5px;
+//             &--icon {
+//                 width: 20px;
+//                 height: 18px;
+//             }
+//             &--legend{
+//                 text-transform: uppercase;
+//                 color: red;
+//                 font-size: 18px;
+//                 font-weight: 600;
+//             }
+//         }
+//         &--arrow {
+//             color: cyan;
+//             font-size: 18px;
+//             text-align: right;
+//         }
+//     }
+// }
