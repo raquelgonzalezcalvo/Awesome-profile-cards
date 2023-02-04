@@ -96,9 +96,25 @@
     }
 }
 
-@mixin desktop {
-    
+// @mixin desktop {
+//     share--target: hidden;
+// }
+
+@media all and (min-width: 1204px) {
+    .share--target {
+        display: none;
+    }
+        .share--target--div {
+            display: none;
+        }
+        .share--target--div--button {
+            display: none;
+        }
+    .icon {
+        display: none;
+    }    
 }
+
 
 // .share {
 //     background-color: aquamarine;
