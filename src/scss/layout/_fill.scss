@@ -1,44 +1,89 @@
 .fill {
     background-color: white;
+    border-top: solid 1px $color--white-three;
     display: block;
     font: $font-opensans-regular-14;
     color: $color--dark-green-blue;
-    &--div{
+    &--div {
         display: flex;
-        flex-direction: row;align-items: flex-start;
-        
-        &--keyboard {
-            color:$color--dull-orange;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 0 20px 10px;
+
+        &--down {
             font-size: 18px;
+            position: relative;
+            left: 20px;
+            top: 5px
         }
+        &--up {
+            position: relative;
+            font-size: 18px;
+            left: -16px;
+            top: 5px;
+        }
+
         &--title{
-            font:$font-opensans-semibold-18;
-            color: $color--gunmetal;
-            text-transform: uppercase;
+        display: flex;
+        flex-direction: row;
+            &--keyboard {
+                color:$color--dull-orange;
+                font-size: 18px;
+                margin: 10px 10px 0 0px;
+            }
+            &--text{
+                font:$font-opensans-semibold-18;
+                color: $color--gunmetal;
+                text-transform: uppercase;
+                margin: 10px 100px 0 0px;
+            }
         }
     }
-    &--collapsable{
+    &--form{
         display: flex;
         flex-direction: column;align-items: flex-start;
-        margin: 10px;
+        margin: 10px 10px 0px 10px;
+        ::placeholder{
+            color: $color--white-three;
+        }
         
-    &--input { 
-        border:solid 1px $color--hospital-green;
-        margin: 10px 10px 10px 0;
         
-    }
+        &--input { 
+            border:solid 1px $color--hospital-green;
+            margin: 10px 10px 20px 0;
+        }
+        &--img {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 0.3fr 1fr  ;
+       
+        &--label--falseBtn {
+            grid-area: 2/1;
+            color: $color--white-two;
+            background-color: $color--dull-orange;
+            padding: 5px 20px ;
+            border-radius: 3px;
+            margin: 10px 0px;
+            
+        }
+        &--div--rectangle {
+            border: solid 1px $color--hospital-green;
+            width: 30px;
+            height: 30px;
+            grid-area: 2/2;
+            margin: 10px 10px 10px 20px;
+            
+        }
+        &--input {
+            display: none;
+        }
+        
     }
 
 }
+}
 
-
-
-
-
-
-
-
-
-// .fill--collapsable {
-//     display: none;
-// }
+.collapsable {
+// display: none;
+}

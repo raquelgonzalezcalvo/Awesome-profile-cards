@@ -1,38 +1,40 @@
 <div class="fill--div">
-    <span class="fill--div--keyboard"><i class="fa-regular fa-keyboard"></i></span>
-    <legend class="fill--div--title">Rellena</legend>
+    <div class="fill--div--title">
+        <span class="fill--div--title--keyboard"><i class="fa-regular fa-keyboard"></i></span>
+        <legend class="fill--div--title--text">Rellena</legend>
+    </div>
     <span class="fill--div--down"><i class="fa-solid fa-chevron-down"></i></span>
-    <span class="fill--div--up"><i class="fa-solid fa-chevron-up"></i></span>
+    <span class="fill--div--up collapsable"><i class="fa-solid fa-chevron-up "></i></span>
 </div>
 
 
-<div class="fill--collapsable">
-    <label class="fill--collapsable--label--fullName" for="fullName">Nombre completo</label>
-    <input placeholder="Ej.: Sally Jill" type="text" id="fullName" name="fullName"
-        class="fill--collapsable--input fullName" />
+<div class="fill--form collapsable">
+    <label class="fill--form--label--fullName" for="fullName">Nombre completo</label>
+    <input placeholder="Ej.: Sally Jill" type="text" id="fullName" name="fullName" class="fill--form--input fullName" />
 
-    <label class="fill--collapsable--label--job" for="job">Puesto</label>
-    <input placeholder="Ej.: Front-end unicorn" type="text" id="job" name="job" class="fill--collapsable--input job" />
+    <label class="fill--form--label--job" for="job">Puesto</label>
+    <input placeholder="Ej.: Front-end unicorn" type="text" id="job" name="job" class="fill--form--input job" />
 
     <!-- en el de la imagen utilizar un div con estilos de botón y luego linkearlo al input cuando se haga el js, ocultar el
     input real como pone aquí https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file y aquí https://mdn.github.io/learning-area/html/forms/file-examples/file-example.html -->
-    <label class="fill--collapsable--label--image" for="image">Imagen de perfil</label>
-    <label class="fill--collapsable--label--falseBtn" for="image">Añadir imagen</label>
-    <input type="file" id="image" name="image" accept="image/*" class="fill--collapsable--input--image" />
-    <div class="Rectangle"></div>
+    <div class="fill--form--img">
+        <label class="fill--form--img--label--image" for="image">Imagen de perfil</label>
+        <label class="fill--form--img--label--falseBtn" for="image">Añadir imagen</label>
+        <input type="file" id="image" name="image" accept="image/*" class="fill--form--img--input" />
+        <div class="fill--form--img--div--rectangle"></div>
+    </div>
 
-    <label class="fill--collapsable--label--email" for="emailAddress">Email</label>
+    <label class="fill--form--label--email" for="emailAddress">Email</label>
     <input placeholder="Ej.: sally-hill@gmail.com" type="email" id="emailAddress" name="emailAddress"
-        class="fill--collapsable--input email" />
+        class="fill--form--input email" />
 
-    <label class="fill--collapsable--label--phone" for="phone">Teléfono</label>
-    <input placeholder="Ej.: 555-55-55-55" type="tel" id="phone" name="phone" class="fill--collapsable--input phone" />
+    <label class="fill--form--label--phone" for="phone">Teléfono</label>
+    <input placeholder="Ej.: 555-55-55-55" type="tel" id="phone" name="phone" class="fill--form--input phone" />
 
-    <label class="fill--collapsable--label--linkedin" for="linkedin">Linkedin</label>
+    <label class="fill--form--label--linkedin" for="linkedin">Linkedin</label>
     <input placeholder="Ej.: linkedin.com/in/sally.hill" type="text" id="linkedin" name="linkedin"
-        class="fill--collapsable--input linkedin" />
+        class="fill--form--input linkedin" />
 
-    <label class="fill--collapsable--label--github" for="github">Github</label>
-    <input placeholder="Ej.: @sally.hill" type="text" id="github" name="github"
-        class="fill--collapsable--input github" />
+    <label class="fill--form--label--github" for="github">Github</label>
+    <input placeholder="Ej.: @sally.hill" type="text" id="github" name="github" class="fill--form--input github" />
 </div>
