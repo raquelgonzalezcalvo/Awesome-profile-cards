@@ -1,9 +1,16 @@
-<form method="get">
+<form class='main--2--form' method="get">
     <fieldset class="design">
         <include src="./design.html"></include>
     </fieldset>
-    <fieldset class="fill">
-        <include src="./fill.html"></include>
+    <fieldset class="main--2--form--fill">
+        <legend class="main--2--form--fill--legend">
+            <i class="fa-regular fa-keyboard main--2--form--fill--legend--keyboard"></i>
+            <h2 class="fmain--2--form--fill--legend--title">Rellena</h2>
+            <i class="fa-solid fa-chevron-up main--2--form--fill--legend--up"></i>
+        </legend>
+        <div class="main--2--form--fill--div collapsable">
+            <include src="./fill.html"></include>
+        </div>
     </fieldset>
     <fieldset class="share">
         <include src="./share.html"></include>
