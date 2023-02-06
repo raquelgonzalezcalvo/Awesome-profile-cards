@@ -4,15 +4,39 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 200px;
+  //margin-top: 200px;
   background-color: $color--silver;
-  position: relative;
-  top: 30px;
+  //position: relative;
+  //top: 30px;
+    @include tablet {
+  
+          width: 329px;
+          height: 812px;
+          border-radius: 6px;
+          margin-left: 350px;
+          padding: 20px 40px 20px 30px;
+          margin: 20px;
+
+
+          &--card {
+              margin: 223px 50px 260px 45px;
+    
+      }
+     }
+
+            @include desktop {
+                width: 585px;
+                min-height: 812px;
+                border-radius: 6px;
+                padding: 20px 40px 20px 30px;
+                margin: 20px;
+              
+            }
 
   &--card {
-    margin-top: 30px;
+    margin: 88px 35px 40px 40px;
 
-    &-button {
+    &--button {
       position: relative;
       top: -20px;
       height: 30px;
@@ -22,14 +46,14 @@
       font-size: 11px;
       text-transform: uppercase;
       background-color: $color--silver;
-      margin-top: 30px;
+      //margin-top: 30px;
     }
   }
 }
 
 .profile {
   width: 240px;
-  height: 329px;
+  height: 305px;
   margin-bottom: 40px;
   background-color: $color--white-two;
   padding: 21px 0 12px;
@@ -41,7 +65,7 @@
     margin: 2px 15px 10px 0;
     background-color: $color--dirty-blue;
 
-    &-name {
+    &--name {
       width: 206px;
       height: 20px;
       margin: 0 14px 4px 15px;
@@ -51,7 +75,7 @@
       font-weight: bold;
     }
     
-    &-p {
+    &--p {
       width: 168px;
       height: 20px;
       margin: 4px 52px 10px 15px;
@@ -73,32 +97,15 @@
   margin-right: 30px;
 
   &--ul {
-    padding-top: 25px;
+    padding-top: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    
 
-    &-mobile {
+    &--mobile {
       border: solid 2px $color--hospital-green;
-      width: 27px;
-      height: 27px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    &-e-mail {
-      border: solid 2px $color--hospital-green;
-      width: 27px;
-      height: 27px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    &-linkedin {
-      border: solid 2px $color--hospital-green;
+      font-size: 18px;
       width: 27px;
       height: 27px;
       border-radius: 50%;
@@ -107,8 +114,31 @@
       justify-content: center;
     }
 
-    &-github {
+    &--e-mail {
       border: solid 2px $color--hospital-green;
+      font-size: 18px;
+      width: 27px;
+      height: 27px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &--linkedin {
+      border: solid 2px $color--hospital-green;
+      font-size: 18px;
+      width: 27px;
+      height: 27px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &--github {
+      border: solid 2px $color--hospital-green;
+      font-size: 18px;
       width: 27px;
       height: 27px;
       border-radius: 50%;
@@ -119,27 +149,3 @@
   }
 }
 
-@include tablet {
-  .preview {
-    width: 329px;
-    min-height: 812px;
-    border-radius: 6px;
-    margin-left: 350px;
-    position: relative;
-    top: 200px;
-    padding-left: 40px;
-
-    &--card {
-      margin-right: 35px;
-    }
-  }
-}
-@include desktop {
-  width: 585px;
-  min-height: 812px;
-  border-radius: 6px;
-  margin-left: 350px;
-  position: relative;
-  top: 200px;
-  padding-left: 40px;
-}
