@@ -11,4 +11,10 @@ width: 100vw;
     padding: 27px 20px 0px 20px;
    margin-bottom: 30px;
  }
+ .collapsed {
+   display: none;
+ }
+ .arrow-collapsed {
+   transform: rotate (180deg) translate (0, 10px);
+}
 }
