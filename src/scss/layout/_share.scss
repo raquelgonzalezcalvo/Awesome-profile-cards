@@ -8,6 +8,7 @@
         //width: auto;
     }
     &--share {
+        border-top: 2px solid $color--white-three;
         display: flex;
         justify-content: space-between;
         width: 100%;
@@ -51,8 +52,8 @@
         background-color: $color--dull-orange;
         color: $color--white-two;
         border-radius: 12px;
-        padding: 15px 22px 15px 18px;
-        margin: 30px 24px 30px 20px;
+        padding: 10px 15px 10px 15px;
+        margin: 15px 24px 30px 43px;
         box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
         @include desktop {
             display: none;

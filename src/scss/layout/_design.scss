@@ -3,7 +3,6 @@
     flex-direction: column;
     padding: 0 20px 0 20px;
     background-color: $color--white-two;
-    border: 5px solid red;
     @include tablet {
         padding: 0 30px 0 40px;
     }
@@ -11,6 +10,7 @@
         display: flex;
         cursor: pointer;
         justify-content: space-between;
+        border-top: 2px solid $color--white-three;
         &--legend{
             display: flex;
             width: 100%;
@@ -73,6 +73,10 @@
                 grid-column: 2/3;
                 grid-row: 1/2;
             }
+            // input::type {
+            //     border: orange;
+            // } 
+            // https: //es.stackoverflow.com/questions/507975/cambiar-color-de-border-a-un-input-radio-button-cuando-paso-el-mouse-sobre-un-tr
             &--2 {
                 grid-column: 2/3;
                 grid-row: 2/3;
