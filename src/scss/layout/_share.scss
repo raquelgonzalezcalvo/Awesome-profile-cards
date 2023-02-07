@@ -1,0 +1,80 @@
+.main--2--form {
+    display: flex;
+    background-color: $color--white-two;
+    padding: 0 20px 0 20px;
+    flex-direction: column;
+    @include tablet {
+        padding: 0 30px 10px 40px;
+        //width: auto;
+    }
+    &--share {
+        border-top: 2px solid $color--white-three;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding-top: -15px;
+        padding-bottom: 8px;
+        &--legend {
+            display: flex;
+            width: 100%;
+            &--icon {
+                color: $color--dull-orange;
+                width: 21px;
+                height: 18px;
+                font-size: 18px;
+                margin-top: 28px;
+                margin-left: -5px;
+            }
+            &--title {
+                display: flex;
+                flex-direction: row;
+                font: $font-opensans-semibold-18;
+                text-transform: uppercase;
+                color: $color--gunmetal;
+                //width: 32px;
+                height: 10px;
+                padding: 27px 20px 25px 12px;
+            }
+            &--arrow {
+                width: 16px;
+                height: 18px;
+                color: $color--gunmetal;
+                font-size: 18px;
+                padding-top: 30px;
+                margin: 0 15px 15px 130px;
+            }
+        } 
+    }       
+    &--target {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        background-color: $color--dull-orange;
+        color: $color--white-two;
+        border-radius: 12px;
+        padding: 10px 15px 10px 15px;
+        margin: 15px 24px 30px 43px;
+        box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+        @include desktop {
+            display: none;
+        }
+        &--icon {
+            margin-right: 9px;
+            font-size: 22px;
+            color: $color--white-two;
+        }
+        &--button {
+            font: $font-opensans-semibold-18;
+            text-transform: uppercase;
+            border: 0px solid transparent;
+            background-color: inherit;
+            color: inherit;
+            padding: 2px;
+            border-radius: 12px;
+        }  
+    }
+}        
+
+
+
+
