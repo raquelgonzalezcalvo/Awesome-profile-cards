@@ -1,0 +1,92 @@
+.main--2--form--fill {
+    background-color: white;
+   
+    font: $font-opensans-regular-14;
+    color: $color--dark-green-blue;
+    width: 40%;
+    margin: auto;
+    @include tablet {
+        width: 90%
+
+    }
+    
+    &--legend {
+        border-top: solid 1px $color--white-three;
+        display: grid;
+        grid-template-columns: 0.7fr 1fr 5fr;
+        margin: 10px 0 20px 10px;
+        padding-top: 10px;
+        align-items: center;
+        justify-items: start;
+
+       
+        &--keyboard {
+            color:$color--dull-orange;
+            font-size: 18px;
+            
+        }
+        &--title{
+            font:$font-opensans-semibold-18;
+            color: $color--gunmetal;
+            text-transform: uppercase;
+            
+        }
+        &--up {
+            font-size: 18px;
+            justify-self: end;
+           
+        }
+        
+    }
+    &--div{
+        display: flex;
+        flex-direction: column;align-items: flex-start;
+        margin: 10px 10px 0px 10px;
+        ::placeholder{
+            color: $color--white-three;
+        }
+        
+        
+        &--input { 
+            border:solid 1px $color--hospital-green;
+            margin: 10px 10px 20px 0;
+            
+            @include tablet {
+                    width: 90%
+                }
+        }
+        &--img {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 0.3fr 1fr  ;
+       
+            &--label--falseBtn {
+                grid-area: 2/1;
+                color: $color--white-two;
+                background-color:   $color--dull-orange;
+                padding: 5px 20px ;
+                border-radius: 3px;
+                margin: 10px 0px;
+
+            }
+            &--div--rectangle {
+                border: solid 1px   $color--hospital-green;
+                width: 30px;
+                height: 30px;
+                grid-area: 2/2;
+                margin: 10px 10px 10px 20px;
+
+            }
+            &--input {
+                display: none;
+            }
+        
+    }
+
+}
+}
+ 
+// .collapsable {
+// // display: none;
+// }
+ 
