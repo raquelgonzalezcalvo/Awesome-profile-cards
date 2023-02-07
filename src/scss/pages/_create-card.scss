@@ -1,5 +1,5 @@
 .main--2 {
- width: 100vw;
+width: 100vw;
  @include tablet {
     display: flex;
     flex-direction: row-reverse;
@@ -8,6 +8,7 @@
  &--form{
     display: flex;
     flex-direction: column;
+    padding: 27px 20px 0px 20px;
     
  }
 }

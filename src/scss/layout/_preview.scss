@@ -1,6 +1,8 @@
-.preview {
+
+
+.main--2--preview {
   height: 457px;
-  width: 320px;
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,7 +36,7 @@
             }
 
   &--card {
-    margin: 88px 35px 40px 40px;
+    // margin: 88px 35px 40px 40px;
 
     &--button {
       position: relative;
@@ -49,9 +51,9 @@
       //margin-top: 30px;
     }
   }
-}
 
-.profile {
+
+&--profile {
   width: 240px;
   height: 305px;
   margin-bottom: 40px;
@@ -83,9 +85,9 @@
       color: $color--gunmetal;
     }
   }
-}
 
-.div--image {
+
+&--div--image {
   width: 240px;
   height: 200px;
   margin: 10px 0;
@@ -93,7 +95,7 @@
   position: relative;
   top: 10px;
 }
-.icons {
+&--icons {
   margin-right: 30px;
 
   &--ul {
@@ -148,4 +150,5 @@
     }
   }
 }
-
+}
+}

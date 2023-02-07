@@ -1,54 +1,55 @@
-.main--2--form {
-    display: flex;
-    flex-direction: column;
-    padding: 0 20px 0 20px;
-    background-color: $color--white-two;
-    @include tablet {
-        padding: 0 30px 0 40px;
-    }
-    &--design {
-        display: flex;
-        cursor: pointer;
-        justify-content: space-between;
-        border-top: 2px solid $color--white-three;
+.main--2--form--design {
+        // display: flex;
+        // cursor: pointer;
+        // justify-content: space-between;
+        // border-top: 2px solid $color--white-three;
         &--legend{
-            display: flex;
-            width: 100%;
-            margin-bottom: 5px;
-            padding-bottom: 8px;
+            // display: flex;
+            // width: 100%;
+            // margin-bottom: 5px;
+            // padding-bottom: 8px;
+            border-top: solid 1px $color--white-three;
+                display: grid;
+                grid-template-columns: 0.7fr 1fr 5fr;
+                margin: 10px 0 20px 10px;
+                padding-top: 10px;
+                align-items: center;
+                justify-items: start;
+            
             &--icon {
                 color: $color--dull-orange;
-                width: 21px;
-                height: 18px;
-                margin-top: 28px;
-                margin-left: -5px;
+                // width: 21px;
+                // height: 18px;
+                // margin-top: 28px;
+                // margin-left: -5px;
             }
             &--title {
-                display: flex;
-                flex-direction: row;
+                // display: flex;
+                // flex-direction: row;
                 font: $font-opensans-semibold-18;
                 text-transform: uppercase;
                 color: $color--gunmetal;  
-                //width: 32px;
-                height: 10px;
-                padding: 27px 20px 25px 12px;
+                // //width: 32px;
+                // height: 10px;
+                // padding: 27px 20px 25px 12px;
             }
             &--arrow {
-                width: 16px;
-                height: 18px;
+                // width: 16px;
+                // height: 18px;
                 color: $color--gunmetal;
                 font-size: 18px;
-                padding-top: 30px;
-                margin: 0 15px 15px 160px;
+                // padding-top: 30px;
+                // margin: 0 15px 15px 160px;
+                justify-self: end;
             }
         }    
-    }
+    
     &--palette {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto auto;
-        margin-bottom: 20px;
-        gap: 5px;
+        // display: grid;
+        // grid-template-columns: 1fr 1fr;
+        // grid-template-rows: auto auto auto;
+        // margin-bottom: 20px;
+        // gap: 5px;
         &--p {
             font: $font-opensans-regular-14;
             grid-column: 1/2;
