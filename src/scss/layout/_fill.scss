@@ -3,12 +3,6 @@
    
     font: $font-opensans-regular-14;
     color: $color--dark-green-blue;
-   
-    @include tablet {
-        width: 90%
-
-    }
-    
     &--legend {
         border-top: solid 1px $color--white-three;
         display: grid;
@@ -51,6 +45,8 @@
         &--input { 
             border:solid 1px $color--hospital-green;
             margin: 10px 10px 20px 0;
+            height: 30px;
+            padding: 0 0 4px 7px;
             
             @include tablet {
                     width: 90%
@@ -68,7 +64,9 @@
                 padding: 5px 20px ;
                 border-radius: 3px;
                 margin: 10px 0px;
-
+                width: 140px;
+                text-align: center;
+                box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
             }
             &--div--rectangle {
                 border: solid 1px   $color--hospital-green;
