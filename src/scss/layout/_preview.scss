@@ -114,6 +114,10 @@
       display: flex;
       align-items: center;
       justify-content: center;
+
+      &--a {
+        color: $color--dark-green-blue;
+      }
     }
 
     &--e-mail {
@@ -125,6 +129,9 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      &--a {
+          color: $color--dark-green-blue;
+        }
     }
 
     &--linkedin {
@@ -136,6 +143,9 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      &--a {
+          color: $color--dark-green-blue;
+        }
     }
 
     &--github {
@@ -147,8 +157,95 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      &--a {
+          color: $color--dark-green-blue;
+        }
     }
   }
 }
 }
+.main--2--preview--profile--div.palette2 {
+
+  background-color: $color--dried-blood;
+  
 }
+.main--2--preview--profile--div--name.palette2 {
+  color:$color--rusty-red;
+}
+
+.main--2--preview--profile--icons--ul--mobile.palette2 {
+border: solid 2px $color--tomato;
+}
+.main--2--preview--profile--icons--ul--e-mail.palette2 {
+  border: solid 2px $color--tomato;
+}
+.main--2--preview--profile--icons--ul--linkedin.palette2 {
+
+  border: solid 2px $color--tomato;
+}
+.main--2--preview--profile--icons--ul--github.palette2 {
+border: solid 2px $color--tomato;
+}
+.main--2--preview--profile--icons--ul--mobile--a.palette2 {
+  color:$color--dried-blood;
+}
+.main--2--preview--profile--icons--ul--e-mail--a.palette2 {
+  color: $color--dried-blood;
+}
+.main--2--preview--profile--icons--ul--linkedin--a.palette2 {
+  color: $color--dried-blood;
+}
+.main--2--preview--profile--icons--ul--github--a.palette2 {
+  color: $color--dried-blood;
+}
+.main--2--preview--profile--div.palette3 {
+
+  background-color: $color--faded-orange;
+
+}
+
+.main--2--preview--profile--div--name.palette3 {
+  color: $color--slate;
+
+ }
+
+
+
+.main--2--preview--profile--icons--ul--mobile.palette3 {
+  border: solid 2px $color--light-grey-blue;
+}
+
+.main--2--preview--profile--icons--ul--e-mail.palette3 {
+  border: solid 2px $color--light-grey-blue;
+}
+
+.main--2--preview--profile--icons--ul--linkedin.palette3 {
+
+  border: solid 2px $color--light-grey-blue;
+}
+
+.main--2--preview--profile--icons--ul--github.palette3 {
+  border: solid 2px $color--light-grey-blue;
+}
+
+.main--2--preview--profile--icons--ul--mobile--a.palette3 {
+  color: $color--slate;
+}
+
+.main--2--preview--profile--icons--ul--e-mail--a.palette3 {
+  color: $color--slate;
+}
+
+.main--2--preview--profile--icons--ul--linkedin--a.palette3 {
+  color: $color--slate;
+}
+
+.main--2--preview--profile--icons--ul--github--a.palette3 {
+  color: $color--slate;
+}
+}
+
+
+
+
+
