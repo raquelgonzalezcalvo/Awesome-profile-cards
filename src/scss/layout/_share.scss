@@ -44,9 +44,6 @@
         padding: 13px 0 13px 0;
         text-align: center;
         margin-bottom: 30px;
-        @include desktop {
-            display: none;
-        }
         &--icon {
             margin-right: 9px;
             font-size: 22px;
