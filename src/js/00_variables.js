@@ -17,3 +17,18 @@ const shareArrow = document.querySelector('.js-share-arrow');
 const fillArrow = document.querySelector('.js-fill-arrow');
 
 const designArrow = document.querySelector('.js-design-arrow');
+
+const buttonPalette1 = document.querySelector ('.js-buttonpalette1');
+
+const buttonPalette2 = document.querySelector ('.js-buttonpalette2');
+
+const buttonPalette3 = document.querySelector ('.js-buttonpalette3');
+
+const elementsPalette3 = document.getElementsByClassName ('palette3');
+
+const inputName = document.querySelector('.js-fullName');
+const previewName = document.querySelector('.js-name');
+
+const inputJob = document.querySelector('.js-job');
+const previewJob = document.querySelector('.js-preview-job');
+
