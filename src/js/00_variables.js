@@ -27,18 +27,21 @@ const buttonPalette2 = document.querySelector ('.js-buttonpalette2');
 
 const buttonPalette3 = document.querySelector ('.js-buttonpalette3');
 
-const elementsPalette3 = document.getElementsByClassName ('palette3');
+// const elementsPalette3 = document.getElementsByClassName ('palette3');
 
-const previewRectangle = document.querySelector ('.js-preview-rectangle');
+// const previewRectangle = document.querySelector ('.js-preview-rectangle');
 
-const borderMobile = document.querySelector ('.js-border-mobile');
+// const borderMobile = document.querySelector ('.js-border-mobile');
 
-const borderEmail = document.querySelector ('.js-border-e-mail');
+// const borderEmail = document.querySelector ('.js-border-e-mail');
 
-const borderLinkedin = document.querySelector ('.js-border-linkedin');
+// const borderLinkedin = document.querySelector ('.js-border-linkedin');
 
-const borderGithub = document.querySelector ('.js-border-github');
+// const borderGithub = document.querySelector ('.js-border-github');
 
+const previewDiv = document.querySelector('.js-preview-div');
+
+const previewList = document.querySelector('.js-list');
 
 // --------------------------------RELLENO TARJETA------------------------------------
 

@@ -22,60 +22,38 @@
 
 
 function deletePalette2() {
-previewRectangle.classList.remove('palette2');
-borderMobile.classList.remove('palette2'); 
-borderEmail.classList.remove('palette2'); 
-borderLinkedin.classList.remove('palette2'); 
-borderGithub.classList.remove('palette2');
-previewName.classList.remove('palette2'); 
+previewDiv.classList.remove('palette2');
+previewList.classList.remove('palette2'); 
 }
 
 function deletePalette3() {
-previewRectangle.classList.remove('palette3');
-borderMobile.classList.remove('palette3'); 
-borderEmail.classList.remove('palette3'); 
-borderLinkedin.classList.remove('palette3'); 
-borderGithub.classList.remove('palette3');
-previewName.classList.remove('palette3');
- 
+previewDiv.classList.remove('palette3');
+previewList.classList.remove('palette3');
 }
 
 function addPalette2() {
-previewRectangle.classList.add('palette2');
-borderMobile.classList.add('palette2'); 
-borderEmail.classList.add('palette2'); 
-borderLinkedin.classList.add('palette2'); 
-borderGithub.classList.add('palette2');
-previewName.classList.add('palette2');
- 
+previewDiv.classList.add('palette2');
+previewList.classList.add('palette2');
 }
 
 function addPalette3() {
-previewRectangle.classList.add('palette3');
-borderMobile.classList.add('palette3'); 
-borderEmail.classList.add('palette3'); 
-borderLinkedin.classList.add('palette3'); 
-borderGithub.classList.add('palette3');
-previewName.classList.add('palette3');
- 
+previewDiv.classList.add('palette3');
+previewList.classList.add('palette3');
 }
 
 function handleClickPalette1(event) {
     deletePalette2();
     deletePalette3();
-    
 }
 
 function handleClickPalette2(event) {
     deletePalette3();
     addPalette2();
-    
 }
 
 function handleClickPalette3(event) {
     deletePalette2();
-    addPalette3();
-    
+    addPalette3();   
 }
 
 buttonPalette1.addEventListener('click', handleClickPalette1);
