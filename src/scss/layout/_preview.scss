@@ -164,82 +164,87 @@
   }
 }
 }
-.palette2.main--2--preview--profile {
-  &--div {
-    background-color: $color--dried-blood;
-    &--name {
-      color: $color--rusty-red;
-    }
-  }
-  &--icons--ul {
-    &--mobile {
-      border: solid 2px $color--tomato;
-      &--a {
-        color:$color--dried-blood;
+.palette2 {
+    .main--2--preview--profile {
+      &--div {
+       background-color: $color--dried-blood;
+         &--name {
+         color: $color--rusty-red;
+        }
+     }
+        &--icons--ul {
+        &--mobile {
+          border: solid 2px $color--tomato;
+          &--a {
+            color:$color--dried-blood;
+          }
+        }
+        &--e-mail {
+          border: solid 2px $color--tomato;
+          &--a {
+              color: $color--dried-blood;
+            }
+        }
+        &--linkedin {
+          border: solid 2px $color--tomato;
+          &--a {
+              color: $color--dried-blood;
+            }
+        }
+        &--github {
+          border: solid 2px $color--tomato;
+          &--a {
+              color: $color--dried-blood;
+            }
+        }
       }
     }
-    &--e-mail {
-      border: solid 2px $color--tomato;
-      &--a {
-          color: $color--dried-blood;
-        }
-    }
-    &--linkedin {
-      border: solid 2px $color--tomato;
-      &--a {
-          color: $color--dried-blood;
-        }
-    }
-    &--github {
-      border: solid 2px $color--tomato;
-      &--a {
-          color: $color--dried-blood;
-        }
-    }
-  }
 }
 
-.palette3.main--2--preview--profile {
-  &--div {
-    background-color: $color--faded-orange;
+.palette3 {
+  .main--2--preview--profile {
+      &--div {
+        background-color: $color--faded-orange;
+      }
+             &--div--name {
+               color: $color--slate;
+             }
 
-    &--name {
-      color: $color--slate;
-    }
-  }
+      &--icons--ul {
+        &--mobile {
+          border: solid 2px $color--light-grey-blue;
 
-  &--icons--ul {
-    &--mobile {
-      border: solid 2px $color--light-grey-blue;
+          &--a {
+            color: $color--slate;
+          }
+        }
 
-      &--a {
-        color: $color--slate;
+        &--e-mail {
+          border: solid 2px $color--light-grey-blue;
+
+          &--a {
+            color: $color--slate;
+          }
+        }
+
+        &--linkedin {
+          border: solid 2px $color--light-grey-blue;
+
+          &--a {
+            color: $color--slate;
+          }
+        }
+
+        &--github {
+          border: solid 2px $color--light-grey-blue;
+
+          &--a {
+            color: $color--slate;
+          }
+        }
       }
     }
-
-    &--e-mail {
-      border: solid 2px $color--light-grey-blue;
-
-      &--a {
-        color: $color--slate;
-      }
-    }
-
-    &--linkedin {
-      border: solid 2px $color--light-grey-blue;
-
-      &--a {
-        color: $color--slate;
-      }
-    }
-
-    &--github {
-      border: solid 2px $color--light-grey-blue;
-
-      &--a {
-        color: $color--slate;
-      }
-    }
-  }
 }
+
+
 }
