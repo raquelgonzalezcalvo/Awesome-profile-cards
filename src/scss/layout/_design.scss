@@ -8,16 +8,16 @@
             // width: 100%;
             // margin-bottom: 5px;
             // padding-bottom: 8px;
-            border-top: solid 1px $color--white-three;
                 display: grid;
                 grid-template-columns: 0.7fr 1fr 5fr;
-                margin: 10px 0 20px 10px;
+                margin: 10px 0 20px 0;
                 padding-top: 10px;
                 align-items: center;
                 justify-items: start;
             
             &--icon {
                 color: $color--dull-orange;
+                font-size: 18px;
                 // width: 21px;
                 // height: 18px;
                 // margin-top: 28px;
@@ -28,7 +28,8 @@
                 // flex-direction: row;
                 font: $font-opensans-semibold-18;
                 text-transform: uppercase;
-                color: $color--gunmetal;  
+                color: $color--gunmetal;
+                margin-left: 10px;
                 // //width: 32px;
                 // height: 10px;
                 // padding: 27px 20px 25px 12px;
@@ -87,6 +88,7 @@
             &--3 {
                 grid-column: 2/3;
                 grid-row: 3/4;
+                margin-bottom: 30px
             }
             &--selector {
                 margin-right: 10px;
