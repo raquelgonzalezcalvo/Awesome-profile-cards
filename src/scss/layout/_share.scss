@@ -9,13 +9,16 @@
         border-bottom: 1px solid $color--white-three;
         &--legend {
             border-top: 1px solid $color--white-three;
+            width: 100%;
             display: grid;
             grid-template-columns: 0.7fr 1fr 5fr;
-                margin: 10px 0 20px 10px;
+            grid-template-rows: 2fr;
+                margin: 10px 0 10px 0px;
                 padding-top: 10px;
                 align-items: center;
                 justify-items: start;
                 color: $color--gunmetal;
+            
             
             &--nodes {
                 color: $color--dull-orange;
@@ -24,7 +27,7 @@
             }
             &--title {
                 font: $font-opensans-semibold-18;
-                
+                margin-left: 10px;
                   
                     text-transform: uppercase;
             }
