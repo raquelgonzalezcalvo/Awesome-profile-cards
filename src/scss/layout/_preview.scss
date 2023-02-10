@@ -57,11 +57,12 @@
 
 &--profile {
   width: 240px;
-  height: 329px;
+  height: 317px;
   margin-bottom: 40px;
   background-color: $color--white-two;
   padding: 21px 0 12px;
   border-radius: 2px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.32);
 
   &--div {
     width: 5px;
