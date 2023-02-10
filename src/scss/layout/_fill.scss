@@ -7,12 +7,13 @@
         width: 100%;
         border-top: solid 1px $color--white-three;
         display: grid;
-        grid-template-columns: 0.7fr 1fr 5fr;
+        grid-template-columns: 30px 1fr 5fr;
         margin: 10px 0 15px 0;
         padding-top: 10px;
         align-items: center;
         justify-items: start;
         color: $color--gunmetal;
+        cursor: pointer;
 
        
         &--keyboard {
@@ -56,6 +57,7 @@
         grid-template-rows: 0.3fr 1fr  ;
        
             &--label--falseBtn {
+                cursor: pointer;
                 grid-area: 2/1;
                 color: $color--white-two;
                 background-color:   $color--dull-orange;

@@ -8,10 +8,11 @@
             // width: 100%;
             // margin-bottom: 5px;
             // padding-bottom: 8px;
+            cursor: pointer;
             border-top: solid 1px $color--white-three;
             width: 100%;
                 display: grid;
-                grid-template-columns: 0.7fr 1fr 5fr;
+                grid-template-columns: 30px 1fr 5fr;
                 margin: 10px 0 10px 0px;
                 padding-top: 10px;
                 align-items: center;
