@@ -24,18 +24,15 @@
             &--nodes {
                 color: $color--dull-orange;
                 font-size: 18px;
-                
             }
             &--title {
                 font: $font-opensans-semibold-18;
                 margin-left: 10px;
-                  
-                    text-transform: uppercase;
+                text-transform: uppercase;
             }
             &--up {
                 font-size: 18px;
-                    justify-self: end;
-                    
+                    justify-self: end;   
             }
         } 
            
@@ -45,9 +42,13 @@
         border-radius: 12px;
         box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
         width: 199px;
-        padding: 13px 0 13px 0;
+        // padding: 13px 0 13px 0;
         text-align: center;
         margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
         &--icon {
             margin-right: 9px;
             font-size: 22px;
