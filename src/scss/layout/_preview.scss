@@ -10,6 +10,7 @@
   background-color: $color--silver;
   //position: relative;
   //top: 30px;
+  background-image: linear-gradient(to bottom, ($color--silver), ($color--pale-grey));
     @include tablet {
   
           width: 329px;
@@ -46,9 +47,10 @@
       padding: 4px 12px 6px 10px;
       border-radius: 15px;
       border: solid 1px $color--white-two;
-      font-size: 11px;
+      font-size: 12px;
       text-transform: uppercase;
       background-color: $color--silver;
+      color: $color--gunmetal;
       //margin-top: 30px;
     }
   }
@@ -56,11 +58,12 @@
 
 &--profile {
   width: 240px;
-  height: 305px;
+  height: 317px;
   margin-bottom: 40px;
   background-color: $color--white-two;
   padding: 21px 0 12px;
   border-radius: 2px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.32);
 
   &--div {
     width: 5px;
@@ -99,6 +102,7 @@
 }
 &--icons {
   margin-right: 30px;
+  // margin-top: 20px;
 
   &--ul {
     padding-top: 10px;
@@ -106,12 +110,13 @@
     flex-direction: row;
     justify-content: space-evenly;
     
+    
 
     &--mobile {
       border: solid 2px $color--hospital-green;
       font-size: 18px;
-      width: 27px;
-      height: 27px;
+      width: 32px;
+      height: 32px;
       border-radius: 50%;
       display: flex;
       align-items: center;
@@ -125,8 +130,8 @@
     &--e-mail {
       border: solid 2px $color--hospital-green;
       font-size: 18px;
-      width: 27px;
-      height: 27px;
+      width: 32px;
+      height: 32px;
       border-radius: 50%;
       display: flex;
       align-items: center;
@@ -139,8 +144,8 @@
     &--linkedin {
       border: solid 2px $color--hospital-green;
       font-size: 18px;
-      width: 27px;
-      height: 27px;
+      width: 32px;
+      height: 32px;
       border-radius: 50%;
       display: flex;
       align-items: center;
@@ -153,8 +158,8 @@
     &--github {
       border: solid 2px $color--hospital-green;
       font-size: 18px;
-      width: 27px;
-      height: 27px;
+      width: 32px;
+      height: 32px;
       border-radius: 50%;
       display: flex;
       align-items: center;
