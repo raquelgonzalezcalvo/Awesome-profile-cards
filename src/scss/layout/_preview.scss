@@ -65,7 +65,8 @@
     width: 5px;
     min-height: 42px;
     margin: 2px 15px 10px 0;
-    background-color: $color--dirty-blue;
+    border-left: solid 5px $color--dirty-blue;
+    //background-color: $color--dirty-blue;
 
     &--name {
       width: 206px;
@@ -167,7 +168,7 @@
 .palette2 {
     .main--2--preview--profile {
       &--div {
-       background-color: $color--dried-blood;
+      border-left: $color--dried-blood;
          &--name {
          color: $color--rusty-red;
         }
@@ -204,7 +205,7 @@
 .palette3 {
   .main--2--preview--profile {
       &--div {
-        background-color: $color--faded-orange;
+        border-left: $color--faded-orange;
       }
              &--div--name {
                color: $color--slate;
