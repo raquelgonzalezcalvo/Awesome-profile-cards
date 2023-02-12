@@ -21,7 +21,7 @@
 
           &--card {
               margin: 223px 50px 260px 45px;
-    
+            // medidas zeplin padding: 173px 44px 252px 45px;
       }
      }
 
@@ -46,6 +46,7 @@
       border-radius: 15px;
       border: solid 1px $color--white-two;
       font-size: 12px;
+      font: $font-opensans-regular-12;
       text-transform: uppercase;
       background-color: $color--silver;
       color: $color--gunmetal;
@@ -74,10 +75,10 @@
       width: 206px;
       height: 20px;
       margin: 0 14px 4px 15px;
-      font: $font-montserrat-regular-16;
+      font: $font-montserrat-bold-18;
       font-size: 18px;
       color: $color--dark-green-blue;
-      font-weight: bold;
+      
     }
     
     &--p {
