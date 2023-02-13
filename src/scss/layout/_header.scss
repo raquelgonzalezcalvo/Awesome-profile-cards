@@ -2,13 +2,19 @@
   height: 111px;
   cursor: pointer;
   
-// @include tablet {
-//  padding: 30px 527px 30px 40px;
-// }
+@include tablet {
+    display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+
 }
 .logo--menu{
   margin: 31px 79px 30px 40px;
   width: 201px;
   height: 50px;
+  // @include tablet {
+  //   margin: 40px 79px 30px 40px;
+  //   }
 }
-
+}

@@ -8,7 +8,7 @@
         border-top: solid 1px $color--white-three;
         display: grid;
         grid-template-columns: 30px 1fr 5fr;
-        margin: 10px 0 15px 0;
+        margin: 10px 0 10px 0;
         padding-top: 10px;
         align-items: center;
         justify-items: start;
@@ -61,7 +61,7 @@
                 grid-area: 2/1;
                 color: $color--white-two;
                 background-color:   $color--dull-orange;
-                padding: 5px 20px ;
+                padding: 5px 0px ;
                 border-radius: 3px;
                 margin: 10px 0px;
                 width: 140px;

@@ -11,18 +11,17 @@
   background-image: linear-gradient(to bottom, ($color--silver), ($color--pale-grey));
     @include tablet {
   
-          width: 329px;
-          height: 812px;
+          width: 35vw;
+          height: 100vh;
           border-radius: 6px;
-          margin-left: 350px;
-          padding: 20px 40px 20px 30px;
-          margin: 20px;
+          padding: 45px 28px 20px 28px;
+          margin: 20px 40px 20px 20px;
 
 
-          &--card {
-              margin: 223px 50px 260px 45px;
-            // medidas zeplin padding: 173px 44px 252px 45px;
-      }
+      //     &--card {
+      //         margin: 223px 50px 260px 45px;
+      //       // medidas zeplin padding: 173px 44px 252px 45px;
+      // }
      }
 
             @include desktop {
@@ -35,7 +34,12 @@
             }
 
   &--card {
-    margin: 88px 35px 40px 40px;
+    // margin: 88px 35px 40px 40px;
+    margin:auto;
+    @include tablet {
+      margin: auto;
+
+    }
 
     &--button {
       cursor: pointer;
@@ -50,7 +54,12 @@
       text-transform: uppercase;
       background-color: $color--silver;
       color: $color--gunmetal;
+      margin-top: 40px;
       //margin-top: 30px;
+      @include tablet {
+          margin-top: 0px;
+      
+        }
     }
   }
 
