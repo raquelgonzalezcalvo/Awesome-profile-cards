@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Awesome profile-cards</title>
+
+  <!-- Google Fonts
+      <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+    rel="stylesheet">
+  <!-- Icons
+  
+    -->
+  <script src="https://kit.fontawesome.com/aecde98a59.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <link rel="icon" href="./assets/images/favicon.png" />
+</head>
+
+<body>
+  <header class="header">
+    <a href="./index.html">
+    <img class="logo--menu"
+     src="./assets/images/logo-awesome-profile-cards.svg" alt="logo header">  
+    </a>
+  </header>
+  <main class="main--2">
+      <div>
+          <section class="main--2--preview">
+              <div class="main--2--preview--card">
+                  <button title="Haz click para resetear tu tarjeta" class="main--2--preview--card--button">
+                      <span class="main--2--preview--card--button--reset"><i class="fa-regular fa-trash-can"></i><span>
+                              reset
+                  </button>
+                  <section class="main--2--preview--profile ">
+                      <div class=" js-preview-div">
+
+                          <div class=" main--2--preview--profile--div ">
+
+                              <h1 class="main--2--preview--profile--div--name js-name ">Nombre apellido</h1>
+                              <p class="main--2--preview--profile--div--p js-preview-job">Front-end developer</p>
+                          </div>
+                      </div>
+                      <div class="main--2--preview--profile--div--image">
+                          <!-- <img src="./assets/images/paisaje.jpg" alt="image__card"> -->
+                      </div>
+                      <nav class="main--2--preview--profile--icons">
+                          <ul class="main--2--preview--profile--icons--ul  js-list">
+                              <li class="main--2--preview--profile--icons--ul--mobile js-border-mobile">
+                                  <a class=" main--2--preview--profile--icons--ul--mobile--a js-icon-mobile" href=""><i
+                                          class="fa-solid fa-mobile-screen-button"></i></a>
+                              </li>
+                              <li class="main--2--preview--profile--icons--ul--e-mail js-border-e-mail">
+                                  <a class="main--2--preview--profile--icons--ul--e-mail--a js-icon-e-mail" href=""><i
+                                          class="fa-regular fa-envelope"></i></a>
+                              </li>
+                              <li class="main--2--preview--profile--icons--ul--linkedin js-border-linkedin">
+                                  <a class="main--2--preview--profile--icons--ul--linkedin--a js-icon-linkedin" target="_blank"
+                                      href=""><i class="fa-brands fa-linkedin-in "></i></a>
+                              </li>
+                              <li class="main--2--preview--profile--icons--ul--github js-border-github">
+                                  <a class="main--2--preview--profile--icons--ul--github--a js-icon-github" target="_blank"
+                                      href=""><i class="fa-brands fa-github-alt"></i></a>
+                              </li>
+                          </ul>
+                      </nav>
+                  </section>
+              </div>
+          </section>
+      </div>
+      <div>
+          <form class="main--2--form" method="get">
+              <fieldset class="main--2--form--design">
+                  <legend title="Despliega la sección de Diseña" class="main--2--form--design--legend js-design-legend">
+                      <i class="fa-regular fa-object-ungroup main--2--form--design--legend--icon"></i>
+                      <h2 class="main--2--form--design--legend--title">Diseña</h2>
+                      <i class="fa-solid fa-chevron-up main--2--form--design--legend--arrow js-design-arrow"></i>
+                  </legend>
+                  <div class="main--2--form--design--palette js-design-form">
+                      <h2 class="main--2--form--design--palette--p">Colores</h2> <!--Poner mayúsculas en css/js-->
+                      <!-- <label for="color1" class="design--palette--box"> -->
+                      <div class="main--2--form--design--palette--box main--2--form--design--palette--box--1">
+                          <input class="main--2--form--design--palette--box--selector js-buttonpalette1" type="radio" value="1" name="palette" checked />
+                          <div class="main--2--form--design--palette--box--1left littlebox"></div>
+                          <div class="main--2--form--design--palette--box--1middle littlebox"></div>
+                          <div class="main--2--form--design--palette--box--1right littlebox"></div>
+                      </div>
+                      <!-- </label> -->
+                      <!-- <label for="color2" class="design--palette--box"> -->
+                      <div class="main--2--form--design--palette--box main--2--form--design--palette--box--2">
+                          <input class="main--2--form--design--palette--box--selector js-buttonpalette2" type="radio" value="2" name="palette" />
+                          <div class="main--2--form--design--palette--box--2left littlebox"></div>
+                          <div class="main--2--form--design--palette--box--2middle littlebox"></div>
+                          <div class="main--2--form--design--palette--box--2right littlebox"></div>
+                      </div>
+                      <!-- </label> -->
+                      <!-- <label for="color3" class="design--palette--box"> -->
+                      <div class="main--2--form--design--palette--box main--2--form--design--palette--box--3">
+                          <input class="main--2--form--design--palette--box--selector js-buttonpalette3" type="radio" value="3" name="palette" />
+                          <div class="main--2--form--design--palette--box--3left littlebox"></div>
+                          <div class="main--2--form--design--palette--box--3middle littlebox"></div>
+                          <div class="main--2--form--design--palette--box--3right littlebox"></div>
+                      </div>
+                      <!-- </label> -->
+                  </div>
+              </fieldset>
+              <fieldset class="main--2--form--fill">
+                  <legend title="Despliega la sección de Rellena" class="main--2--form--fill--legend js-fill-legend">
+                      <i class="fa-regular fa-keyboard main--2--form--fill--legend--keyboard"></i>
+                      <h2 class="main--2--form--fill--legend--title">Rellena</h2>
+                      <i class="fa-solid fa-chevron-up main--2--form--fill--legend--up arrow-collapsed js-fill-arrow"></i>
+                  </legend>
+                  <div class="main--2--form--fill--div  js-fill-form collapsed">
+                      <label class="main--2--form--fill--div--label--fullName" for="fullName">Nombre completo</label>
+                      <input placeholder="Ej: Sally Jill" type="text" id="fullName" name="fullName"
+                          class="main--2--form--fill--div--input js-fullName" />
+
+                      <label class="main--2--form--fill--div--label--job" for="job">Puesto</label>
+                      <input placeholder="Ej: Front-end unicorn" type="text" id="job" name="job"
+                          class="main--2--form--fill--div--input js-job " />
+
+                      <!-- en el de la imagen utilizar un div con estilos de botón y luego linkearlo al input cuando se haga el js, ocultar el
+                          input real como pone aquí https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file y aquí https://mdn.github.io/learning-area/html/forms/file-examples/file-example.html -->
+                      <div class="main--2--form--fill--div--img">
+                          <label class="main--2--form--fill--div--img--label--image" for="image">Imagen de perfil</label>
+                          <label class="main--2--form--fill--div--img--label--falseBtn" for="image">Añadir imagen</label>
+                          <input type="file" id="image" name="image" accept="image/*" class="main--2--form--fill--div--img--input" />
+                          <div class="main--2--form--fill--div--img--div--rectangle"></div>
+                      </div>
+
+                      <label class="main--2--form--fill--div--label--email" for="emailAddress">Email</label>
+                      <input placeholder="Ej: sally-hill@gmail.com" type="email" id="emailAddress" name="emailAddress"
+                          class="main--2--form--fill--div--input js-email " />
+
+                      <label class="main--2--form--fill--div--label--phone" for="phone">Teléfono</label>
+                      <input placeholder="Ej: 555-55-55-55" type="tel" id="phone" name="phone"
+                          class="main--2--form--fill--div--input js-phone" />
+
+                      <label class="main--2--form--fill--div--label--linkedin" for="linkedin">Linkedin</label>
+                      <input placeholder="Ej: linkedin.com/in/sally.hill" type="text" id="linkedin" name="linkedin"
+                          class="main--2--form--fill--div--input js-linkedin" />
+
+                      <label class="main--2--form--fill--div--label--github" for="github">Github</label>
+                      <input placeholder="Ej: @sally.hill" type="text" id="github" name="github"
+                          class="main--2--form--fill--div--input js-github" />
+                  </div>
+              </fieldset>
+              <fieldset class="main--2--form--share">
+                  <legend title="Despliega la sección de Comparte" class="main--2--form--share--legend js-share-legend">
+                      <i class="fa-solid fa-share-nodes main--2--form--share--legend--nodes"></i>
+                      <h2 class="main--2--form--share--legend--title">Comparte</h2>
+                      <i class="fa-solid fa-chevron-up main--2--form--share--legend--up arrow-collapsed js-share-arrow"></i>
+                  </legend>
+                  <div class="main--2--form--share--div  js-share-form collapsed">
+                      <!-- <i class="fa-regular fa-address-card main--2--form--target--icon"></i>
+                      <button class="main--2--form--target--button">Crear tarjeta</button> -->
+
+
+
+                      <div class="main--2--form--share--target">
+                          <i class="fa-regular fa-address-card main--2--form--share--target--icon"></i>
+                          <button class="main--2--form--share--target--button">Crear tarjeta</button> <!--Poner en mayúsuclas en el css/js-->
+                      </div>
+                  </div>
+              </fieldset>
+          </form>
+      </div>
+  </main>
+  <footer class="footer">
+  <p class="footer--name--app">
+      Awesome profile-cards @2018
+  </p>
+  <a class="footer--logo" href="https://adalab.es/" target="_blank">
+      <img class="footer--logo--logo-adalab" src="./assets/images/logo-adalab.png" alt="logo Adalab">
+  </a>
+  </footer>
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
