@@ -104,14 +104,19 @@ inputPhone.addEventListener('input', handleInputPhone);
 
 function handleInputLinkedin(event) {
     const linkedinWritten = inputLinkedin.value;
-    previewLinkedin.href = linkedinWritten;
+    previewLinkedin.href = `https://linkedin.com/in/${linkedinWritten}`;
 }
 
 inputLinkedin.addEventListener('input', handleInputLinkedin);
 
 function handleInputGithub(event) {
     const githubWritten = inputGithub.value;
-    previewGithub.href = githubWritten;
+    previewGithub.href  = `https://github.com/${githubWritten}`;
+}
+
+function handleReset () {
+    const 
 }
 
 inputGithub.addEventListener('input', handleInputGithub);
+buttonReset.addEventListener('click', handleReset);
