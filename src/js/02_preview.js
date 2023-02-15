@@ -64,59 +64,82 @@ buttonPalette3.addEventListener('click', handleClickPalette3);
 // ------------------------RELLENO TARJETA----------
 
 function handleInputName(event) {
-    const nameWritten = inputName.value;
-
-    if (nameWritten === '') {
-    previewName.innerHTML = 'Nombre y Apellido';
-    } else {
-    previewName.innerHTML = nameWritten;
-    }
+    data.name = input.name.value;
+    updatePreview();
 }
-
-inputName.addEventListener('input', handleInputName);
-
 
 function handleInputJob(event) {
-    const jobWritten = inputJob.value;
-
-    if (jobWritten === '') {
-    previewJob.innerHTML = 'Front-end developer';
-    } else {
-    previewJob.innerHTML = jobWritten;
-    }
+    data.job = input.job.value;
+    updatePreview();
 }
-
-inputJob.addEventListener('input', handleInputJob);
 
 function handleInputMail(event) {
-    const mailWritten = inputMail.value;
-    previewMail.href= `mailto:${mailWritten}`;
+    data.email = input.email.value;
+    updatePreview();
 }
-
-inputMail.addEventListener('input', handleInputMail);
 
 function handleInputPhone(event) {
-    const phoneWritten = inputPhone.value;
-    previewPhone.href = `tel:${phoneWritten}`;
+    data.phone = input.phone.value;
+    updatePreview();
 }
-
-inputPhone.addEventListener('input', handleInputPhone);
 
 function handleInputLinkedin(event) {
-    const linkedinWritten = inputLinkedin.value;
-    previewLinkedin.href = `https://linkedin.com/in/${linkedinWritten}`;
+    data.linkedin = input.linkedin.value;
+    updatePreview();
 }
-
-inputLinkedin.addEventListener('input', handleInputLinkedin);
 
 function handleInputGithub(event) {
-    const githubWritten = inputGithub.value;
-    previewGithub.href  = `https://github.com/${githubWritten}`;
+    data.github = input.github.value;
+    updatePreview();
 }
 
-function handleReset () {
-    const 
+function updatePreview() {
+    if (data.name === '') {
+    previewName.innerHTML = 'Nombre y Apellidos';
+    } else {
+    previewName.innerHTML = data.name;
+    }
+
+    if (data.job === '') {
+    previewJob.innerHTML = 'Front-end developer';
+    } else {
+    previewJob.innerHTML = data.job;
+    }
+
+    previewMail.href= `mailto:${data.email}`;
+    previewPhone.href = `tel:${data.phone}`;
+     previewLinkedin.href = `https://linkedin.com/in/${data.linkedin}`;
+     previewGithub.href  = `https://github.com/${data.github}`;
+    
 }
 
-inputGithub.addEventListener('input', handleInputGithub);
-buttonReset.addEventListener('click', handleReset);
+
+const handleClickReset = () => {
+    data.palette = 1;
+    data.name = '';
+    data.job = '';
+    data.phone = '';
+    data.email = '';
+    data.linkedin = '';
+    data.github = '';
+    data.photo = '';
+
+    updatePreview();
+
+    input.name.value = '';
+    input.job.value = '';
+    input.phone.value = '';
+    input.email.value = '';
+    input.linkedin.value = '';
+    input.github.value = '';
+    // input.photo.value = '';
+}
+
+input.name.addEventListener('input', handleInputName);
+input.job.addEventListener('input', handleInputJob);
+input.email.addEventListener('input', handleInputMail);
+input.phone.addEventListener('input', handleInputPhone);
+input.linkedin.addEventListener('input', handleInputLinkedin);
+
+input.github.addEventListener('input', handleInputGithub);
+buttonReset.addEventListener('click', handleClickReset);
