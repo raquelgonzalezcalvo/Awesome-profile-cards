@@ -41,7 +41,6 @@ const input = {
     phone: document.querySelector('.js-phone'),
     linkedin: document.querySelector('.js-linkedin'),
     github: document.querySelector('.js-github')
-
 };
 
 const buttonReset = document.querySelector('.js-reset');
@@ -62,3 +61,4 @@ const previewLinkedin = document.querySelector('.js-icon-linkedin');
 
 // const inputGithub = document.querySelector('.js-github');
 const previewGithub = document.querySelector('.js-icon-github');
+const errorMsg = document.querySelector('.js-error');
