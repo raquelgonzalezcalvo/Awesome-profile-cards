@@ -107,6 +107,8 @@
   background-image: url(../images/favicon.png);
   position: relative;
   top: 10px;
+  background-size: cover;
+  background-position: center center;
 }
 &--icons {
   margin-right: 30px;

@@ -34,15 +34,8 @@ const data = {
     photo: ''
 };
 
-const input = {
-    name: document.querySelector('.js-fullName'),
-    job: document.querySelector('.js-job'),
-    email: document.querySelector('.js-email'),
-    phone: document.querySelector('.js-phone'),
-    linkedin: document.querySelector('.js-linkedin'),
-    github: document.querySelector('.js-github')
-};
 
+const allInputsList = document.querySelectorAll ('.js-input');
 const buttonReset = document.querySelector('.js-reset');
 // const inputName = document.querySelector('.js-fullName');
 const previewName = document.querySelector('.js-name');

@@ -30,14 +30,10 @@ const handleClickReset = () => {
     data.photo = '';
 
     updatePreview();
-
-    input.name.value = '';
-    input.job.value = '';
-    input.phone.value = '';
-    input.email.value = '';
-    input.linkedin.value = '';
-    input.github.value = '';
-    // input.photo.value = '';
+    for (let i = 0; i < allInputsList.length; i++) {
+    allInputsList[i].value = ''; 
 }
+}
+
 
 buttonReset.addEventListener('click', handleClickReset);
