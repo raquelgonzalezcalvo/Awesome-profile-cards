@@ -19,7 +19,13 @@ function updatePreview() {
     
 }
 
+const cleanInputs = allInputsList.map((input) => input.name.value = '')
+console.log(input.name.value);
+
+
 const handleClickReset = () => {
+    cleanInputs()
+
     data.palette = 1;
     data.name = '';
     data.job = '';
@@ -30,9 +36,14 @@ const handleClickReset = () => {
     data.photo = '';
 
     updatePreview();
-    for (let i = 0; i < allInputsList.length; i++) {
-    allInputsList[i].value = ''; 
-}
+    allInputsList.name.value = 'hola'
+    console.log(allInputsList.name)
+
+
+    
+//     for (let i = 0; i < allInputsList.length; i++) {
+//     allInputsList[i].value = ''; 
+// }
 }
 
 

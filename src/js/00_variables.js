@@ -32,8 +32,19 @@ const data = {
     photo: ''
 };
 
+const inputs = [
+    {
+    name: '',
+    job: '',
+    phone: '',
+    email: '',
+    linkedin: '',
+    github: '',
+    photo: ''}
+]
 
-const allInputsList = document.querySelectorAll ('.js-input');
+
+const allInputsList = document.querySelectorAll('.js-input');
 const buttonReset = document.querySelector('.js-reset');
 // const inputName = document.querySelector('.js-fullName');
 const previewName = document.querySelector('.js-name');
