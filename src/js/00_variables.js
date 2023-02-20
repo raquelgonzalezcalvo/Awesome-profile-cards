@@ -46,16 +46,10 @@ const inputs = [
 
 const allInputsList = document.querySelectorAll('.js-input');
 const buttonReset = document.querySelector('.js-reset');
-// const inputName = document.querySelector('.js-fullName');
 const previewName = document.querySelector('.js-name');
-// const inputJob = document.querySelector('.js-job');
 const previewJob = document.querySelector('.js-preview-job');
-// const inputMail = document.querySelector('.js-email');
 const previewMail = document.querySelector('.js-icon-e-mail');
-// const inputPhone = document.querySelector('.js-phone');
 const previewPhone = document.querySelector('.js-icon-mobile');
-// const inputLinkedin = document.querySelector('.js-linkedin');
 const previewLinkedin = document.querySelector('.js-icon-linkedin');
-// const inputGithub = document.querySelector('.js-github');
 const previewGithub = document.querySelector('.js-icon-github');
 const errorMsg = document.querySelectorAll('.js-error');

@@ -1,10 +1,14 @@
-const showErrorMsg = errorMsg.map((message) => message.innerHTML = `<i class="fa-solid fa-circle-exclamation"></i>Introduce tu nombre`);
-// esto abajo era lo que teníamos antes que es IGUAL
-// function showErrorMsg() { 
-//     for (let i = 0; i < errorMsg.length; i++) { 
-//         errorMsg[i].innerHTML = `<i class="fa-solid fa-circle-exclamation"></i>Introduce tu nombre`;
-//   }
-// }
+function showErrorMsg() { 
+   for (let i = 0; i < allInputsList.length; i++) { 
+       errorMsg[i].innerHTML = ""; 
+       errorMsg[i].innerHTML += `<i class="fa-solid fa-circle-exclamation"></i>Introduce tu ${allInputsList[i].name}`;
+
+      console.log(allInputsList[i].name) 
+
+    }   
+         
+  }
+
 
 function handleInputForm(event) {
  data[event.target.name] = event.target.value;
@@ -14,9 +18,9 @@ function handleInputForm(event) {
 }
 }
 
-const eventInput = allInputsList.map((input) => input.addEventListener('input', handleInputForm));
-/*
+
+
 for (let i = 0; i < allInputsList.length; i++) {
     allInputsList[i].addEventListener('input', handleInputForm);
 }
-*/
+
