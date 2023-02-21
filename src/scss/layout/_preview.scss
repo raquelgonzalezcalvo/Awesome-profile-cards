@@ -1,13 +1,15 @@
 .main--2--preview {
   height: 457px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   //margin-top: 200px;
-  background-color: $color--silver;
+  background-color: $color--silver 80%;
   //position: relative;
   //top: 30px;
-  background-image: linear-gradient(to bottom, ($color--silver), ($color--pale-grey));
+  // https: //www.aprenderaprogramar.com/index.php?option=com_content&view=article&id=729:propiedades-css-width-y-height-auto-automatico-ejemplos-practicos-y-ejercicios-resueltos-cu01025d&catid=75&Itemid=203
+  background-image: linear-gradient(to bottom, $color--silver, $color--pale-grey);
     @include tablet {
           width: 35vw;
           height: 100vh;
