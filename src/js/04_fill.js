@@ -1,9 +1,9 @@
 function showErrorMsg() { 
-   for (let i = 0; i < allInputsList.length; i++) { 
+   for (let i = 0; i < errorMsg.length; i++) { 
        errorMsg[i].innerHTML = ""; 
-       errorMsg[i].innerHTML += `<i class="fa-solid fa-circle-exclamation"></i>Introduce tu ${allInputsList[i].name}`;
+       errorMsg[i].innerHTML += `<i class="fa-solid fa-circle-exclamation"></i>Introduce tu ${errorMsg[i].id}`;
 
-      console.log(allInputsList[i].name) 
+      console.log(errorMsg[i].id) 
 
     }   
          
