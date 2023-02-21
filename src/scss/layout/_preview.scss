@@ -1,6 +1,5 @@
 .main--2--preview {
   height: 457px;
-  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,7 +9,6 @@
   //top: 30px;
   background-image: linear-gradient(to bottom, ($color--silver), ($color--pale-grey));
     @include tablet {
-  
           width: 35vw;
           height: 100vh;
           border-radius: 6px;

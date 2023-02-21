@@ -16,6 +16,9 @@ function handleInputForm(event) {
  if (event.target.value === ""){    
     showErrorMsg();
 }
+localStorage.setItem('name', 'pepito')
+// localStorage.setItem('formData', JSON.stringify(data))
+// console.log(data)
 }
 
 

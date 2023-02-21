@@ -21,7 +21,7 @@ const previewList = document.querySelector('.js-list');
 
 // --------------------------------RELLENO TARJETA------------------------------------
 
-const data = {
+let data = {
     palette: 1,
     name: '',
     job: '',
@@ -55,3 +55,5 @@ const previewGithub = document.querySelector('.js-icon-github');
 const errorMsg = document.querySelectorAll('.js-error');
 const sendBtn = document.querySelector('.js-create-btn');
 const twitterBtn = document.querySelector('.js-twitter-btn');
+const linkCard  = document.querySelector('.js-create-link');
+const inputName = document.querySelector('.js-name');
