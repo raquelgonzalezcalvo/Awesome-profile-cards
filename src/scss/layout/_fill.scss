@@ -25,7 +25,6 @@
             font:$font-opensans-semibold-18;
             margin-left: 10px;
             text-transform: uppercase;
-            
         }
         &--up {
             font-size: 18px;
@@ -41,8 +40,7 @@
         ::placeholder{
             color: $color--white-three;
         }
-        
-        
+                 
         &--input { 
             border:solid 1px $color--hospital-green;
             margin: 10px 10px 20px 0;
@@ -50,6 +48,9 @@
             width: 97%;
             padding: 0 0 4px 7px;
         
+        }
+        &--input.js-border-input {
+                    border: solid 1px red;
         }
         &--img {
         display: grid;
@@ -87,3 +88,13 @@
 }
 }
  
+.js-error{
+
+color: red;
+font: $font-opensans-regular-12-8;
+padding-bottom: 15px;
+}
+.fa-asterisk {
+    color: $color--dull-orange;
+    font-size: 12px;
+}

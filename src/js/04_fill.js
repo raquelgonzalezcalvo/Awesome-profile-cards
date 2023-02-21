@@ -1,12 +1,17 @@
 function showErrorMsg() { 
    for (let i = 0; i < errorMsg.length; i++) { 
        errorMsg[i].innerHTML = ""; 
-       errorMsg[i].innerHTML += `<i class="fa-solid fa-circle-exclamation"></i>Introduce tu ${errorMsg[i].id}`;
-
+       errorMsg[i].innerHTML += `<i class="fa-solid fa-circle-exclamation"></i> Introduce tu ${errorMsg[i].id}`;
       console.log(errorMsg[i].id) 
 
     }   
          
+  }
+
+  function addClassError() {
+    for (const input of allInputsList) {
+      input.classList.add('js-border-input')
+    }
   }
 
 
@@ -15,6 +20,7 @@ function handleInputForm(event) {
  updatePreview();
  if (event.target.value === ""){    
     showErrorMsg();
+    addClassError()
 }
 localStorage.setItem('name', 'pepito')
 // localStorage.setItem('formData', JSON.stringify(data))
