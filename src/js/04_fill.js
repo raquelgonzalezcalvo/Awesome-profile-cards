@@ -16,7 +16,7 @@ function showErrorMsg() {
 
 
 function handleInputForm(event) {
-//  data[event.target.name] = event.target.value;
+ data[event.target.name] = event.target.value;
  updatePreview();
  if (event.target.value === ""){    
     showErrorMsg();
