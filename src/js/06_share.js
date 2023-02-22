@@ -1,11 +1,10 @@
 /* eslint-disable strict */
 function handleClickSend(event) {
 event.preventDefault();
-const url =
-    'https://dev.adalab.es/api/card/';
+const url = 'https://dev.adalab.es/api/card/';
   fetch(url, {
     method: 'POST', // or 'PUT'
-    body: JSON.stringify(formData), // data can be `string` or {object}!
+    body: JSON.stringify(data), // data can be `string` or {object}!
     headers: {
       'content-type': 'application/json',
     },
@@ -32,12 +31,14 @@ function showURL(result) {
     // responseURL.innerHTML = `<span>🌱La tarjeta ha sido creada:</span><a href="${result.cardURL}" target="_blank" >${result.cardURL}</a>`;
     linkCard.innerHTML = data.cardURL;
     linkCard.href = data.cardURL;
-    const twitterLink = document.querySelector('.twitter--link');
-    submitButton.setAttribute('disabled', '');
-    twitterLink.setAttribute(
+    // const twitterLink = document.querySelector('.twitter--link');
+    sendBtn.setAttribute('clicked', '');
+    linkCard.setAttribute(
       'href',
-      `https://twitter.com/intent/tweet?text=${textCard}&url=${result.cardURL}&hashtags=Adalabers,JavaScript,PromoJemison,week7of12`
+      `https://twitter.com/intent/tweet?text=${textCard}&url=${result.cardURL}&hashtags=Adalabers,JavaScript,PromoSalas`
     );
+  } else {
+    //
   }
 }
 
