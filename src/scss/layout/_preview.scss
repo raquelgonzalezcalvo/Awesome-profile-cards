@@ -8,6 +8,7 @@
   //position: relative;
   //top: 30px;
   background-image: linear-gradient(to bottom, ($color--silver), ($color--pale-grey));
+
     @include tablet {
           width: 35vw;
           height: 100vh;
@@ -23,7 +24,7 @@
      }
 
             @include desktop {
-                width: 585px;
+                width: 90%;
                 min-height: 812px;
                 border-radius: 6px;
                 padding: 20px 40px 20px 30px;

@@ -6,6 +6,7 @@ background-image: linear-gradient(to bottom, $color--white-four, $color--white-t
     flex-direction: row-reverse;
    justify-content: flex-end;
  }
+
  
  &--form{
     display: flex;
@@ -24,3 +25,10 @@ background-image: linear-gradient(to bottom, $color--white-four, $color--white-t
    transform: rotate(180deg);
 }
 }
+.container{
+  @include desktop {
+    width: 70vw;
+  }
+  
+}
+
