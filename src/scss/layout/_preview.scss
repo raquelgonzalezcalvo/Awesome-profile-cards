@@ -11,7 +11,7 @@
   background-image: linear-gradient(to bottom, ($color--silver), ($color--pale-grey));
 
     @include tablet {
-          width: 35vw;
+          width: 80%;
           height: 100vh;
           border-radius: 6px;
           padding: 45px 28px 20px 28px;
@@ -25,7 +25,7 @@
      }
 
             @include desktop {
-                width: 90%;
+                width: 85%;
                 min-height: 812px;
                 border-radius: 6px;
                 padding: 20px 40px 20px 30px;
