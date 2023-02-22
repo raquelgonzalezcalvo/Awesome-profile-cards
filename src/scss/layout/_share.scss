@@ -1,12 +1,8 @@
 .main--2--form--share {
-        // display: flex;
-        // justify-content: space-between;
-        // width: 100%;
-        // padding-top: -15px;
-        // padding-bottom: 8px;
         display: flex;
         justify-content: center;
         border-bottom: 1px solid $color--white-three;
+
         &--legend {
             cursor: pointer;
             border-top: 1px solid $color--white-three;
@@ -14,22 +10,23 @@
             display: grid;
             grid-template-columns: 30px 1fr 5fr;
             grid-template-rows: 2fr;
-                margin: 10px 0 10px 0px;
-                padding-top: 10px;
-                align-items: center;
-                justify-items: start;
-                color: $color--gunmetal;
-            
+            margin: 10px 0 10px 0px;
+            padding-top: 10px;
+            align-items: center;
+            justify-items: start;
+            color: $color--gunmetal;
             
             &--nodes {
                 color: $color--dull-orange;
                 font-size: 18px;
             }
+
             &--title {
                 font: $font-opensans-semibold-18;
                 margin-left: 10px;
                 text-transform: uppercase;
             }
+
             &--up {
                 font-size: 18px;
                     justify-self: end;   
@@ -42,18 +39,20 @@
         border-radius: 12px;
         box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
         width: 199px;
-        // padding: 13px 0 13px 0;
         text-align: center;
-        margin: 20px 0 30px 0;
+        margin: 20px auto 30px auto;
         display: flex;
         justify-content: center;
         align-items: center;
         height: 50px;
+        animation: wiggle 2s linear;
+
         &--icon {
             margin-right: 9px;
             font-size: 22px;
             color: $color--white-two;
         }
+
         &--button {
             cursor: pointer;
             font: $font-opensans-semibold-18;
@@ -66,22 +65,30 @@
         }  
     }
     &--twitter{
+        border-top: 1px solid $color--white-three;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 5px;
+        width: 88vw;
+
+        @include tablet {
+            width: 42vw;
+        }
+
         &--title{
             font: $font-opensans-semibold-18;
             color: $color--gunmetal;
-
+            margin-top: 20px;
         }
+
         &--link{
             text-decoration: none;
             font:$font-opensans-semibold-12;
             color:$color--dull-orange;
-
         }
+        
         &--divTwitter{
             margin-top: 10px;
             display: flex;
@@ -91,6 +98,7 @@
             padding: 6px 9px 6px 10.5px;
             border-radius: 3px;
             color: $color--white-two;
+            margin-bottom: 30px;
 
             &--btnTwitter{
             cursor: pointer;
@@ -104,6 +112,13 @@
             }
         }
         
+    }
+    .clicked {
+        background-color: $color--white-three;
+    }
+
+    .display--none {
+        display: none;
     }
 }        
 
