@@ -56,4 +56,4 @@ const errorMsg = document.querySelectorAll('.js-error');
 const sendBtn = document.querySelector('.js-create-btn');
 const twitterBtn = document.querySelector('.js-twitter-btn');
 const linkCard  = document.querySelector('.js-create-link');
-const inputName = document.querySelector('.js-name');
+const inputName = document.querySelector('.js-name-input');

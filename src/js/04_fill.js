@@ -22,7 +22,7 @@ function handleInputForm(event) {
     showErrorMsg();
     addClassError()
 }
-localStorage.setItem('name', 'pepito')
+localStorage.setItem('name', JSON.stringify('pepito'))
 // localStorage.setItem('formData', JSON.stringify(data))
 // console.log(data)
 }

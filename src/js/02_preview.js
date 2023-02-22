@@ -1,4 +1,8 @@
 /* eslint-disable strict */
+const pepe = JSON.parse(localStorage.getItem('name'))
+
+inputName.value = pepe;
+
 function updatePreview() {
     if (data.name === '') {
     previewName.innerHTML = 'Nombre y Apellidos';
