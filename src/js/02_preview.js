@@ -11,7 +11,7 @@ if (localStorageData) {
     data = localStorageData;
     
     updatePreview()
-
+     
      inputName.value = data.name;
      inputJob.value = data.job;
      //inputPhoto.value = data.photo;
