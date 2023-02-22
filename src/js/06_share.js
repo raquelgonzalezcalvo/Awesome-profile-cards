@@ -9,18 +9,13 @@ fetch('https://dev.adalab.es/api/card/', {
 .then((response) => response.json() )
 .then((data) => {
     if(data.success){ 
-       
-        // const linkCard  = document.querySelector('.js-create-link');
-        // data.photo = fr.result;
         linkCard.innerHTML = data.cardURL;
         linkCard.href = data.cardURL;
-       
-        console.log(linkCard.href)
-        // linkCard.innerHTML = data.result;
-        // linkCard.href = data.result;
+        
+        twitterSection.classList.remove("display--none");
+        sendBtn.classList.add("clicked");
     }
-    //  formData = data
-     console.log(data)
+ 
 })
 };
 

@@ -7,10 +7,11 @@ if (localStorageData !== undefined) {
 
      inputName.value = data.name;
      inputJob.value = data.job;
-     inputPhone.value = data.phone;
+     //inputPhoto.value = data.photo;
      inputEmail.value = data.email;
+     inputPhone.value = data.phone;
      inputLinkedin.value = data.linkedin;
-     inputGithub.value = data.photo;
+     inputGithub.value = data.github;
 }
 
 

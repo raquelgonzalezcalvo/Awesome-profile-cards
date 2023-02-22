@@ -63,3 +63,5 @@ const inputEmail = document.querySelector('.js-email-input');
 const inputLinkedin = document.querySelector('.js-linkedin-input');
 const inputGithub = document.querySelector('.js-github-input');
 const inputPhoto = document.querySelector('.js-photo-input');
+const twitterSection = document.querySelector('.js-twitterSection');
+
