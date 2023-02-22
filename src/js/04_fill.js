@@ -16,14 +16,14 @@ function showErrorMsg() {
 
 
 function handleInputForm(event) {
- data[event.target.name] = event.target.value;
+//  data[event.target.name] = event.target.value;
  updatePreview();
  if (event.target.value === ""){    
     showErrorMsg();
     addClassError()
 }
-localStorage.setItem('formData', JSON.stringify(data))
-console.log(data)
+  localStorage.setItem('formData', JSON.stringify(data))
+  console.log(data)
 }
 
 
