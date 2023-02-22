@@ -1,7 +1,9 @@
 /* eslint-disable strict */
-const pepe = JSON.parse(localStorage.getItem('name'))
+// const pepe = JSON.parse(localStorage.getItem('name'))
 
-inputName.value = pepe;
+// inputName.value = pepe;
+
+const localStorageData = JSON.parse(localStorage.getItem('formData'))
 
 function updatePreview() {
     if (data.name === '') {
