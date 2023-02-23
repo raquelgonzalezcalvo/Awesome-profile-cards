@@ -31,10 +31,10 @@
     </a>
   </header>
   <main class="main--2">
-      <div>
+      <div class="container">
           <section class="main--2--preview">
               <div class="main--2--preview--card">
-                  <button title="Haz click para resetear tu tarjeta" class="main--2--preview--card--button">
+                  <button title="Haz click para resetear tu tarjeta" class="main--2--preview--card--button js-reset">
                       <span class="main--2--preview--card--button--reset"><i class="fa-regular fa-trash-can"></i><span>
                               reset
                   </button>
@@ -47,7 +47,7 @@
                               <p class="main--2--preview--profile--div--p js-preview-job">Front-end developer</p>
                           </div>
                       </div>
-                      <div class="main--2--preview--profile--div--image">
+                      <div class="main--2--preview--profile--div--image js__profile-preview">
                           <!-- <img src="./assets/images/paisaje.jpg" alt="image__card"> -->
                       </div>
                       <nav class="main--2--preview--profile--icons">
@@ -86,7 +86,7 @@
                       <h2 class="main--2--form--design--palette--p">Colores</h2> <!--Poner mayúsculas en css/js-->
                       <!-- <label for="color1" class="design--palette--box"> -->
                       <div class="main--2--form--design--palette--box main--2--form--design--palette--box--1">
-                          <input class="main--2--form--design--palette--box--selector js-buttonpalette1" type="radio" value="1" name="palette" checked />
+                          <input class="main--2--form--design--palette--box--selector js-buttonpalette1 js-newPalette" type="radio" value="1" name="palette" checked />
                           <div class="main--2--form--design--palette--box--1left littlebox"></div>
                           <div class="main--2--form--design--palette--box--1middle littlebox"></div>
                           <div class="main--2--form--design--palette--box--1right littlebox"></div>
@@ -94,7 +94,7 @@
                       <!-- </label> -->
                       <!-- <label for="color2" class="design--palette--box"> -->
                       <div class="main--2--form--design--palette--box main--2--form--design--palette--box--2">
-                          <input class="main--2--form--design--palette--box--selector js-buttonpalette2" type="radio" value="2" name="palette" />
+                          <input class="main--2--form--design--palette--box--selector js-buttonpalette2 js-newPalette" type="radio" value="2" name="palette" />
                           <div class="main--2--form--design--palette--box--2left littlebox"></div>
                           <div class="main--2--form--design--palette--box--2middle littlebox"></div>
                           <div class="main--2--form--design--palette--box--2right littlebox"></div>
@@ -102,7 +102,7 @@
                       <!-- </label> -->
                       <!-- <label for="color3" class="design--palette--box"> -->
                       <div class="main--2--form--design--palette--box main--2--form--design--palette--box--3">
-                          <input class="main--2--form--design--palette--box--selector js-buttonpalette3" type="radio" value="3" name="palette" />
+                          <input class="main--2--form--design--palette--box--selector js-buttonpalette3 js-newPalette" type="radio" value="3" name="palette" />
                           <div class="main--2--form--design--palette--box--3left littlebox"></div>
                           <div class="main--2--form--design--palette--box--3middle littlebox"></div>
                           <div class="main--2--form--design--palette--box--3right littlebox"></div>
@@ -117,38 +117,43 @@
                       <i class="fa-solid fa-chevron-up main--2--form--fill--legend--up arrow-collapsed js-fill-arrow"></i>
                   </legend>
                   <div class="main--2--form--fill--div  js-fill-form collapsed">
-                      <label class="main--2--form--fill--div--label--fullName" for="fullName">Nombre completo</label>
-                      <input placeholder="Ej: Sally Jill" type="text" id="fullName" name="fullName"
-                          class="main--2--form--fill--div--input js-fullName" />
-
-                      <label class="main--2--form--fill--div--label--job" for="job">Puesto</label>
+                      <label class="main--2--form--fill--div--label--fullName" for="fullName">Nombre completo <i class="fas fa-asterisk"
+                              aria-hidden="true"></i></label>
+                      <input placeholder="Ej: Sally Jill" type="text" id="fullName" name="name"
+                          class="main--2--form--fill--div--input js-input js-name-input" required />
+                      <small id="nombre" class="js-error"></small>
+                      <label class="main--2--form--fill--div--label--job" for="job">Puesto <i class="fas fa-asterisk"
+                              aria-hidden="true"></i></label>
                       <input placeholder="Ej: Front-end unicorn" type="text" id="job" name="job"
-                          class="main--2--form--fill--div--input js-job " />
-
-                      <!-- en el de la imagen utilizar un div con estilos de botón y luego linkearlo al input cuando se haga el js, ocultar el
-                          input real como pone aquí https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file y aquí https://mdn.github.io/learning-area/html/forms/file-examples/file-example.html -->
+                          class="main--2--form--fill--div--input js-input js-job-input" required />
+                      <small id="puesto" class="js-error"></small>
                       <div class="main--2--form--fill--div--img">
-                          <label class="main--2--form--fill--div--img--label--image" for="image">Imagen de perfil</label>
+                          <label class="main--2--form--fill--div--img--label--image" for="image">Imagen de perfil <i class="fas fa-asterisk"
+                                  aria-hidden="true"></i> </label>
                           <label class="main--2--form--fill--div--img--label--falseBtn" for="image">Añadir imagen</label>
-                          <input type="file" id="image" name="image" accept="image/*" class="main--2--form--fill--div--img--input" />
-                          <div class="main--2--form--fill--div--img--div--rectangle"></div>
+                          <input type="file" id="image" name="photo" accept="image/*"
+                              class="main--2--form--fill--div--img--input js-input js__profile-upload-btn js-photo-input" required />
+                          <div class="main--2--form--fill--div--img--div--rectangle js__profile-image"></div>
                       </div>
-
-                      <label class="main--2--form--fill--div--label--email" for="emailAddress">Email</label>
-                      <input placeholder="Ej: sally-hill@gmail.com" type="email" id="emailAddress" name="emailAddress"
-                          class="main--2--form--fill--div--input js-email " />
-
+                      <small id="imagen" class="js-error"></small>
+                      <label class="main--2--form--fill--div--label--email" for="emailAddress">Email <i class="fas fa-asterisk"
+                              aria-hidden="true"></i></label>
+                      <input placeholder="Ej: sally-hill@gmail.com" type="email" id="emailAddress" name="email"
+                          class="main--2--form--fill--div--input js-input js-email-input" required />
+                      <small id="correo" class="js-error"></small>
                       <label class="main--2--form--fill--div--label--phone" for="phone">Teléfono</label>
                       <input placeholder="Ej: 555-55-55-55" type="tel" id="phone" name="phone"
-                          class="main--2--form--fill--div--input js-phone" />
-
-                      <label class="main--2--form--fill--div--label--linkedin" for="linkedin">Linkedin</label>
-                      <input placeholder="Ej: linkedin.com/in/sally.hill" type="text" id="linkedin" name="linkedin"
-                          class="main--2--form--fill--div--input js-linkedin" />
-
-                      <label class="main--2--form--fill--div--label--github" for="github">Github</label>
-                      <input placeholder="Ej: @sally.hill" type="text" id="github" name="github"
-                          class="main--2--form--fill--div--input js-github" />
+                          class="main--2--form--fill--div--input js-input js-phone-input" />
+                      <label class="main--2--form--fill--div--label--linkedin" for="linkedin">Linkedin <i class="fas fa-asterisk"
+                              aria-hidden="true"></i></label>
+                      <input placeholder="Ej: sally.hill" type="text" id="linkedin" name="linkedin"
+                          class="main--2--form--fill--div--input js-input js-linkedin-input" required />
+                      <small id="Linkedin" class="js-error"></small>
+                      <label class="main--2--form--fill--div--label--github" for="github">Github <i class="fas fa-asterisk"
+                              aria-hidden="true"></i></label>
+                      <input placeholder="Ej: sally.hill" type="text" id="github" name="github"
+                          class="main--2--form--fill--div--input js-input js-github-input" required />
+                      <small id="Github" class="js-error"></small>
                   </div>
               </fieldset>
               <fieldset class="main--2--form--share">
@@ -158,14 +163,21 @@
                       <i class="fa-solid fa-chevron-up main--2--form--share--legend--up arrow-collapsed js-share-arrow"></i>
                   </legend>
                   <div class="main--2--form--share--div  js-share-form collapsed">
-                      <!-- <i class="fa-regular fa-address-card main--2--form--target--icon"></i>
-                      <button class="main--2--form--target--button">Crear tarjeta</button> -->
-
-
-
-                      <div class="main--2--form--share--target">
+                      <div class="main--2--form--share--target js-create-btn">
                           <i class="fa-regular fa-address-card main--2--form--share--target--icon"></i>
-                          <button class="main--2--form--share--target--button">Crear tarjeta</button> <!--Poner en mayúsuclas en el css/js-->
+                          <button class="main--2--form--share--target--button ">Crear tarjeta</button>
+
+                      </div>
+
+                      <div class="main--2--form--share--twitter display--none js-twitterSection">
+                          <h3 class="main--2--form--share--twitter--title">La tarjeta ha sido creada:</h3>
+                          <p><a class="main--2--form--share--twitter--link js-create-link" href="" target="_blank"></a></p>
+                          <div class="main--2--form--share--twitter--divTwitter">
+                              <i class="fa-brands fa-twitter"></i>
+                              <button class="main--2--form--share--twitter--divTwitter--btnTwitter js-twitter-btn">Compartir en
+                                  Twitter</button>
+                          </div>
+
                       </div>
                   </div>
               </fieldset>
