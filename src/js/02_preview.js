@@ -37,10 +37,9 @@ const handleClickReset = () => {
     data.linkedin = '';
     data.github = '';
     data.photo = '';
-
-    updatePreview();
-   
-
+    
+    
+    resetImage();
 
     
     for (let i = 0; i < allInputsList.length; i++) {
@@ -48,5 +47,10 @@ const handleClickReset = () => {
 }
 }
 
+function resetImage() {
+  profilePreview.style.backgroundImage = `url("./assets/images/favicon.png")`;
+  profileImage.style.backgroundImage = 'none';
+  updatePreview();
+}
 
 buttonReset.addEventListener('click', handleClickReset);

@@ -52,8 +52,9 @@ const previewMail = document.querySelector('.js-icon-e-mail');
 const previewPhone = document.querySelector('.js-icon-mobile');
 const previewLinkedin = document.querySelector('.js-icon-linkedin');
 const previewGithub = document.querySelector('.js-icon-github');
-const errorMsg = document.querySelectorAll('.js-error');
+let errorMsg = document.querySelectorAll('.js-error');
 const sendBtn = document.querySelector('.js-create-btn');
 const twitterBtn = document.querySelector('.js-twitter-btn');
 const linkCard  = document.querySelector('.js-create-link');
 const inputName = document.querySelector('.js-name-input');
+

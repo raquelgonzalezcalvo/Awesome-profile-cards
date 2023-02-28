@@ -28,6 +28,7 @@ background-image: linear-gradient(to bottom, $color--white-four, $color--white-t
 .container{
   @include desktop {
     width: 70vw;
+    
   }
   
 }

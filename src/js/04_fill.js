@@ -1,12 +1,14 @@
-function showErrorMsg() { 
-   for (let i = 0; i < errorMsg.length; i++) { 
-       errorMsg[i].innerHTML = ""; 
-       errorMsg[i].innerHTML += `<i class="fa-solid fa-circle-exclamation"></i> Introduce tu ${errorMsg[i].id}`;
-      console.log(errorMsg[i].id) 
+function showErrorMsg(element) {
+  const smallElement = errorMsg.find(eachErrorMsg => eachErrorMsg.attributes.pepino === element.id);
+  console.log(errorMsg);
+   for (const smallElement of errorMsg) { 
+       smallElement.innerHTML = ""; 
+       smallElement.innerHTML += `<i class="fa-solid fa-circle-exclamation"></i> Introduce tu ${smallElement.id}`;
+    }
 
-    }   
+  
          
-  }
+}
 
   function addClassError() {
     for (const input of allInputsList) {
@@ -17,9 +19,11 @@ function showErrorMsg() {
 
 function handleInputForm(event) {
  data[event.target.name] = event.target.value;
+ console.log(data[event.target.name]);
  updatePreview();
  if (event.target.value === ""){    
-    showErrorMsg();
+    showErrorMsg(event.target);
+    console.log(event.target)
     addClassError()
 }
 localStorage.setItem('name', JSON.stringify('pepito'))
