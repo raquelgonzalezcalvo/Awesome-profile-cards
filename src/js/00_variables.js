@@ -16,6 +16,7 @@ const designArrow = document.querySelector('.js-design-arrow');
 const buttonPalette1 = document.querySelector ('.js-buttonpalette1');
 const buttonPalette2 = document.querySelector ('.js-buttonpalette2');
 const buttonPalette3 = document.querySelector ('.js-buttonpalette3');
+// const paletteAll = document.querySelectorAll('.js-newPalette');
 const previewDiv = document.querySelector('.js-preview-div');
 const previewList = document.querySelector('.js-list');
 
@@ -34,6 +35,7 @@ let data = {
 
 const inputs = [
     {
+    palette: '',
     name: '',
     job: '',
     phone: '',
@@ -41,7 +43,7 @@ const inputs = [
     linkedin: '',
     github: '',
     photo: ''}
-]
+];
 
 
 const allInputsList = document.querySelectorAll('.js-input');
@@ -57,4 +59,12 @@ const sendBtn = document.querySelector('.js-create-btn');
 const twitterBtn = document.querySelector('.js-twitter-btn');
 const linkCard  = document.querySelector('.js-create-link');
 const inputName = document.querySelector('.js-name-input');
+
+const inputJob = document.querySelector('.js-job-input');
+const inputPhone = document.querySelector('.js-phone-input');
+const inputEmail = document.querySelector('.js-email-input');
+const inputLinkedin = document.querySelector('.js-linkedin-input');
+const inputGithub = document.querySelector('.js-github-input');
+const inputPhoto = document.querySelector('.js-photo-input');
+const twitterSection = document.querySelector('.js-twitterSection');
 

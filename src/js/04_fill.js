@@ -26,9 +26,8 @@ function handleInputForm(event) {
     console.log(event.target)
     addClassError()
 }
-localStorage.setItem('name', JSON.stringify('pepito'))
-// localStorage.setItem('formData', JSON.stringify(data))
-// console.log(data)
+  localStorage.setItem('formData', JSON.stringify(data))
+  console.log(data)
 }
 
 
