@@ -55,7 +55,7 @@ const handleClickReset = () => {
 }
 
 function resetImage() {
-  profilePreview.style.backgroundImage = `url("./assets/images/favicon.png")`;
+  profilePreview.style.backgroundImage = `url("./assets/images/test.png")`;
   profileImage.style.backgroundImage = 'none';
   updatePreview();
 }

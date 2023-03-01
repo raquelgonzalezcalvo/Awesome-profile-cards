@@ -4,37 +4,22 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  //margin-top: 200px;
-  background-color: $color--silver 80%;
-  //position: relative;
-  //top: 30px;
-  background-image: linear-gradient(to bottom, ($color--silver), ($color--pale-grey));
-
+  box-shadow: 10px 10px 12px 6px rgb(109, 107, 107);
     @include tablet {
           width: 80%;
           height: 100vh;
           border-radius: 6px;
           padding: 45px 28px 20px 28px;
           margin: 20px 40px 20px 20px;
-
-
-      //     &--card {
-      //         margin: 223px 50px 260px 45px;
-      //       // medidas zeplin padding: 173px 44px 252px 45px;
-      // }
      }
-
-            @include desktop {
-                width: 85%;
-                min-height: 812px;
-                border-radius: 6px;
-                padding: 20px 40px 20px 30px;
-                margin: 20px;
-              
-            }
-
+     @include desktop {
+         width: 85%;
+         min-height: 812px;
+         border-radius: 6px;
+         padding: 20px 40px 20px 30px;
+         margin: 20px;
+     }
   &--card {
-    // margin: 88px 35px 40px 40px;
     margin:auto;
     @include tablet {
       margin: auto;
@@ -52,7 +37,6 @@
       font-size: 12px;
       font: $font-opensans-regular-12;
       text-transform: uppercase;
-      background-color: $color--silver;
       color: $color--gunmetal;
       margin-top: 40px;
       //margin-top: 30px;
@@ -74,7 +58,8 @@
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.32);
   transition: all ease 0.7s;
   &:hover {
-      transform: scale(1.1);}
+      transform: scale(1.1);
+    }
 
   &--div {
     width: 5px;
@@ -107,7 +92,7 @@
   width: 240px;
   height: 200px;
   margin: 10px 0;
-  background-image: url(../images/favicon.png);
+  background-image: url(../images/test.png);
   position: relative;
   top: 10px;
   background-size: cover;

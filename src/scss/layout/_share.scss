@@ -120,5 +120,9 @@
     .display--none {
         display: none;
     }
+    .text-error {
+        font: $font-opensans-regular-14;
+        color: $color--gunmetal;
+    }
 }        
 
