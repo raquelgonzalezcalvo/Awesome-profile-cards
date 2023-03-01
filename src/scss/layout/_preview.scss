@@ -72,6 +72,9 @@
   padding: 21px 0 12px;
   border-radius: 2px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.32);
+  transition: all ease 0.7s;
+  &:hover {
+      transform: scale(1.1);}
 
   &--div {
     width: 5px;
@@ -131,6 +134,10 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      transition: all ease 0.7s;
+          &:hover {
+            border-radius: 15%;}
+      
 
       &--a {
         color: $color--dark-green-blue;
@@ -146,6 +153,10 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      transition: all ease 0.7s;
+          &:hover {
+            border-radius: 15%;
+          }
       &--a {
           color: $color--dark-green-blue;
         }
@@ -160,6 +171,10 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      transition: all ease 0.7s;
+        &:hover {
+          border-radius: 15%;
+        }
       &--a {
           color: $color--dark-green-blue;
         }
@@ -174,6 +189,10 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      transition: all ease 0.7s;
+        &:hover {
+          border-radius: 15%;
+        }
       &--a {
           color: $color--dark-green-blue;
         }

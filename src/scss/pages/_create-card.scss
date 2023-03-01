@@ -27,6 +27,16 @@ background-image: linear-gradient(to bottom, $color--white-four, $color--white-t
  .arrow-collapsed {
    color: $color--gunmetal;
 }
+.animation{
+  max-height: 0;
+  overflow: hidden;
+  transform: scaleY(0);
+  }
+.animation-open {
+  max-height: 100%;
+  transition: transform 0.3s ease-out;
+  transform: scaleY(1);
+    }
 }
 .container{
   @include tablet {
