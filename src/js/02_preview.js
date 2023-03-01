@@ -1,11 +1,5 @@
-/* eslint-disable strict */
-// const pepe = JSON.parse(localStorage.getItem('name'))
-
-// inputName.value = pepe;
-
 const localStorageData = JSON.parse(localStorage.getItem('formData'));
 
-// console.log(inputs[0].name.value);
 console.log(data)
 if (localStorageData) {
     data = localStorageData;
@@ -41,11 +35,7 @@ function updatePreview() {
     
 }
 
-
-
-
 const handleClickReset = () => {
-    
 
     data.palette = 1;
     data.name = '';
@@ -56,12 +46,11 @@ const handleClickReset = () => {
     data.github = '';
     data.photo = '';
     
-    
     resetImage();
-
+    localStorage.removeItem('formData');
     
     for (let i = 0; i < allInputsList.length; i++) {
-    allInputsList[i].value = ''; 
+    allInputsList[i].value = '';
 }
 }
 

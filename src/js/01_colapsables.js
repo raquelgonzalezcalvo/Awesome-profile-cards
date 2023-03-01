@@ -1,4 +1,3 @@
-
 function closeAllSections() {
     designForm.classList.add('collapsed');
     fillForm.classList.add('collapsed');

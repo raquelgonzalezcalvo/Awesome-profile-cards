@@ -1,4 +1,3 @@
-/* eslint-disable strict */
 function handleClickSend(event) {
 event.preventDefault();
 fetch('https://dev.adalab.es/api/card/', {
@@ -19,20 +18,13 @@ fetch('https://dev.adalab.es/api/card/', {
             textError.innerHTML = `<p class='text-error'>¡Algo estás haciendo mal! Inténtalo de nuevo</p>`;
             console.log(data)
         }
- 
-        
-       
-      
     }else {
        console.log(data);
         linkCard.innerHTML = data.cardURL;
         linkCard.href = data.cardURL;
-        // twitterLink.href = `https://twitter.com/intent/tweet?text=Mi%20tarjeta%20de%20presentaci%C3%B3n&url=${data.cardURL}`
+        twitterLink.href = `https://twitter.com/intent/tweet?text=Mi%20tarjeta%20de%20presentaci%C3%B3n&url=${data.cardURL}`;
     }
-       
 })
 };
-
-
 
 sendBtn.addEventListener('click', handleClickSend)

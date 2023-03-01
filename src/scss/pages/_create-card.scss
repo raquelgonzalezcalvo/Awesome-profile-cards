@@ -21,8 +21,11 @@ background-image: linear-gradient(to bottom, $color--white-four, $color--white-t
  .collapsed {
    display: none;
  }
+ .fa-cake-candles {
+  color: $color--faded-orange;
+ }
  .arrow-collapsed {
-   transform: rotate(180deg);
+   color: $color--dirty-blue;
 }
 }
 .container{
