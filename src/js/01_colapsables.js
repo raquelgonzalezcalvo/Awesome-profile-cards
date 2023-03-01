@@ -19,7 +19,6 @@ function handleClickDesign(event) {
     closeAllSections();
     turnDownAllArrows();
     openAndTurnDesignSection();
-    animation();
 }
 
 function openAndTurnFillSection() {
@@ -31,7 +30,6 @@ function handleClickFill(event) {
     closeAllSections();
     turnDownAllArrows();
     openAndTurnFillSection();
-    animation();
 }
 
 function openAndTurnShareSection() {
@@ -43,16 +41,8 @@ function handleClickShare(event) {
     closeAllSections();
     turnDownAllArrows();
     openAndTurnShareSection();
-    animation();
 }
-function animation(){
-    designForm.classList.remove('animation');
-    fillForm.classList.remove('animation');
-    shareForm.classList.remove('animation');
-    designForm.classList.add('animation-open');
-    fillForm.classList.add('animation-open');
-    shareForm.classList.add('animation-open');
-}
+
 
 designLegend.addEventListener('click', handleClickDesign);
 fillLegend.addEventListener('click', handleClickFill);
