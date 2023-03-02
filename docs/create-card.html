@@ -20,14 +20,13 @@
     -->
   <script src="https://kit.fontawesome.com/aecde98a59.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./assets/css/main.css" />
-  <link rel="icon" href="./assets/images/favicon.png" />
+  <link rel="icon" href="./assets/images/test-remove.png" />
 </head>
 
 <body>
   <header class="header">
     <a href="./index.html">
-    <img class="logo--menu"
-     src="./assets/images/logo-awesome-profile-cards.svg" alt="logo header">  
+      <img class="logo--menu" src="./assets/images/logo-twenty.svg" alt="logo header">  
     </a>
   </header>
   <main class="main--2">
@@ -76,17 +75,17 @@
       </div>
       <div>
           <form class="main--2--form" method="get">
-              <fieldset class="main--2--form--design">
+              <fieldset class="main--2--form--design ">
                   <legend title="Despliega la sección de Diseña" class="main--2--form--design--legend js-design-legend">
                       <i class="fa-regular fa-object-ungroup main--2--form--design--legend--icon"></i>
                       <h2 class="main--2--form--design--legend--title">Diseña</h2>
-                      <i class="fa-solid fa-chevron-up main--2--form--design--legend--arrow js-design-arrow"></i>
+                      <i class="fa-solid fa-cake-candles main--2--form--design--legend--arrow js-design-arrow hidden"></i>
                   </legend>
-                  <div class="main--2--form--design--palette js-design-form">
+                  <div class="main--2--form--design--palette js-design-form animation">
                       <h2 class="main--2--form--design--palette--p">Colores</h2> <!--Poner mayúsculas en css/js-->
                       <!-- <label for="color1" class="design--palette--box"> -->
                       <div class="main--2--form--design--palette--box main--2--form--design--palette--box--1">
-                          <input class="main--2--form--design--palette--box--selector js-buttonpalette1 js-newPalette" type="radio" value="1" name="palette" checked />
+                          <input class="main--2--form--design--palette--box--selector js-buttonpalette1 js-newPalette" id="1" type="radio" value="1" name="palette" checked />
                           <div class="main--2--form--design--palette--box--1left littlebox"></div>
                           <div class="main--2--form--design--palette--box--1middle littlebox"></div>
                           <div class="main--2--form--design--palette--box--1right littlebox"></div>
@@ -94,7 +93,7 @@
                       <!-- </label> -->
                       <!-- <label for="color2" class="design--palette--box"> -->
                       <div class="main--2--form--design--palette--box main--2--form--design--palette--box--2">
-                          <input class="main--2--form--design--palette--box--selector js-buttonpalette2 js-newPalette" type="radio" value="2" name="palette" />
+                          <input class="main--2--form--design--palette--box--selector js-buttonpalette2 js-newPalette" id="2" type="radio" value="2" name="palette" />
                           <div class="main--2--form--design--palette--box--2left littlebox"></div>
                           <div class="main--2--form--design--palette--box--2middle littlebox"></div>
                           <div class="main--2--form--design--palette--box--2right littlebox"></div>
@@ -102,7 +101,7 @@
                       <!-- </label> -->
                       <!-- <label for="color3" class="design--palette--box"> -->
                       <div class="main--2--form--design--palette--box main--2--form--design--palette--box--3">
-                          <input class="main--2--form--design--palette--box--selector js-buttonpalette3 js-newPalette" type="radio" value="3" name="palette" />
+                          <input class="main--2--form--design--palette--box--selector js-buttonpalette3 js-newPalette" id="3" type="radio" value="3" name="palette" />
                           <div class="main--2--form--design--palette--box--3left littlebox"></div>
                           <div class="main--2--form--design--palette--box--3middle littlebox"></div>
                           <div class="main--2--form--design--palette--box--3right littlebox"></div>
@@ -114,19 +113,20 @@
                   <legend title="Despliega la sección de Rellena" class="main--2--form--fill--legend js-fill-legend">
                       <i class="fa-regular fa-keyboard main--2--form--fill--legend--keyboard"></i>
                       <h2 class="main--2--form--fill--legend--title">Rellena</h2>
-                      <i class="fa-solid fa-chevron-up main--2--form--fill--legend--up arrow-collapsed js-fill-arrow"></i>
+                      <i
+                          class="fa-solid fa-cake-candles main--2--form--fill--legend--up arrow-collapsed js-fill-arrow hidden"></i>
                   </legend>
-                  <div class="main--2--form--fill--div  js-fill-form collapsed">
+                  <div class="main--2--form--fill--div  js-fill-form collapsed animation">
                       <label class="main--2--form--fill--div--label--fullName" for="fullName">Nombre completo <i class="fas fa-asterisk"
                               aria-hidden="true"></i></label>
                       <input placeholder="Ej: Sally Jill" type="text" id="fullName" name="name"
                           class="main--2--form--fill--div--input js-input js-name-input" required />
-                      <small id="nombre" class="js-error"></small>
+                      <small id="nombre" error="fullName" class="js-error"></small>
                       <label class="main--2--form--fill--div--label--job" for="job">Puesto <i class="fas fa-asterisk"
                               aria-hidden="true"></i></label>
                       <input placeholder="Ej: Front-end unicorn" type="text" id="job" name="job"
                           class="main--2--form--fill--div--input js-input js-job-input" required />
-                      <small id="puesto" class="js-error"></small>
+                      <small id="puesto" error="job" class="js-error"></small>
                       <div class="main--2--form--fill--div--img">
                           <label class="main--2--form--fill--div--img--label--image" for="image">Imagen de perfil <i class="fas fa-asterisk"
                                   aria-hidden="true"></i> </label>
@@ -135,12 +135,12 @@
                               class="main--2--form--fill--div--img--input js-input js__profile-upload-btn js-photo-input" required />
                           <div class="main--2--form--fill--div--img--div--rectangle js__profile-image"></div>
                       </div>
-                      <small id="imagen" class="js-error"></small>
+                      <small id="imagen" error="image" class="js-error"></small>
                       <label class="main--2--form--fill--div--label--email" for="emailAddress">Email <i class="fas fa-asterisk"
                               aria-hidden="true"></i></label>
                       <input placeholder="Ej: sally-hill@gmail.com" type="email" id="emailAddress" name="email"
                           class="main--2--form--fill--div--input js-input js-email-input" required />
-                      <small id="correo" class="js-error"></small>
+                      <small id="correo" error="emailAddress" class="js-error"></small>
                       <label class="main--2--form--fill--div--label--phone" for="phone">Teléfono</label>
                       <input placeholder="Ej: 555-55-55-55" type="tel" id="phone" name="phone"
                           class="main--2--form--fill--div--input js-input js-phone-input" />
@@ -148,34 +148,39 @@
                               aria-hidden="true"></i></label>
                       <input placeholder="Ej: sally.hill" type="text" id="linkedin" name="linkedin"
                           class="main--2--form--fill--div--input js-input js-linkedin-input" required />
-                      <small id="Linkedin" class="js-error"></small>
+                      <small id="Linkedin" error="linkedin" class="js-error"></small>
                       <label class="main--2--form--fill--div--label--github" for="github">Github <i class="fas fa-asterisk"
                               aria-hidden="true"></i></label>
                       <input placeholder="Ej: sally.hill" type="text" id="github" name="github"
                           class="main--2--form--fill--div--input js-input js-github-input" required />
-                      <small id="Github" class="js-error"></small>
+                      <small id="Github" error="github" class="js-error"></small>
                   </div>
               </fieldset>
               <fieldset class="main--2--form--share">
                   <legend title="Despliega la sección de Comparte" class="main--2--form--share--legend js-share-legend">
                       <i class="fa-solid fa-share-nodes main--2--form--share--legend--nodes"></i>
                       <h2 class="main--2--form--share--legend--title">Comparte</h2>
-                      <i class="fa-solid fa-chevron-up main--2--form--share--legend--up arrow-collapsed js-share-arrow"></i>
+                      <i
+                          class="fa-solid fa-cake-candles main--2--form--share--legend--up arrow-collapsed js-share-arrow hidden"></i>
                   </legend>
-                  <div class="main--2--form--share--div  js-share-form collapsed">
+                  <div class="main--2--form--share--div  js-share-form collapsed animation">
                       <div class="main--2--form--share--target js-create-btn">
                           <i class="fa-regular fa-address-card main--2--form--share--target--icon"></i>
-                          <button class="main--2--form--share--target--button ">Crear tarjeta</button>
+                          <button class="main--2--form--share--target--button js-create-btn">Crear tarjeta</button>
+                      </div>
+                      <div class="js-dataError">
 
                       </div>
+                      <!-- añadir clase display--none cuando solucionemos localStorage en JS -->
 
-                      <div class="main--2--form--share--twitter display--none js-twitterSection">
+                      <div class="main--2--form--share--twitter js-twitter-section display--none">
                           <h3 class="main--2--form--share--twitter--title">La tarjeta ha sido creada:</h3>
                           <p><a class="main--2--form--share--twitter--link js-create-link" href="" target="_blank"></a></p>
                           <div class="main--2--form--share--twitter--divTwitter">
                               <i class="fa-brands fa-twitter"></i>
-                              <button class="main--2--form--share--twitter--divTwitter--btnTwitter js-twitter-btn">Compartir en
-                                  Twitter</button>
+                              <button class="main--2--form--share--twitter--divTwitter--btnTwitter js-twitter-btn">
+                                  <a class="main--2--form--share--twitter--divTwitter--btnTwitter--link js-share-twitter" target="_blank">Compartir en Twitter</a>
+                              </button>
                           </div>
 
                       </div>
@@ -185,9 +190,7 @@
       </div>
   </main>
   <footer class="footer">
-  <p class="footer--name--app">
-      Awesome profile-cards @2018
-  </p>
+      <img class="footer--logo--twenty--candles" src="./assets/images/logo-twenty.svg" alt="logo header">
   <a class="footer--logo" href="https://adalab.es/" target="_blank">
       <img class="footer--logo--logo-adalab" src="./assets/images/logo-adalab.png" alt="logo Adalab">
   </a>
