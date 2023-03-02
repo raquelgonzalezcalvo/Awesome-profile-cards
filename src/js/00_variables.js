@@ -10,7 +10,6 @@ const shareArrow = document.querySelector('.js-share-arrow');
 const fillArrow = document.querySelector('.js-fill-arrow');
 const designArrow = document.querySelector('.js-design-arrow');
 
-
 // ----------------------------------PALETTE -----------------------------------------
 
 const buttonPalette1 = document.querySelector ('.js-buttonpalette1');
@@ -45,7 +44,6 @@ const inputs = [
     photo: ''}
 ];
 
-
 const allInputsList = document.querySelectorAll('.js-input');
 const buttonReset = document.querySelector('.js-reset');
 const previewName = document.querySelector('.js-name');
@@ -54,7 +52,7 @@ const previewMail = document.querySelector('.js-icon-e-mail');
 const previewPhone = document.querySelector('.js-icon-mobile');
 const previewLinkedin = document.querySelector('.js-icon-linkedin');
 const previewGithub = document.querySelector('.js-icon-github');
-const errorMsg = document.querySelectorAll('.js-error');
+let errorMsg = document.querySelectorAll('.js-error');
 const sendBtn = document.querySelector('.js-create-btn');
 const twitterBtn = document.querySelector('.js-twitter-btn');
 const linkCard  = document.querySelector('.js-create-link');

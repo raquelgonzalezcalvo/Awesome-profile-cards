@@ -34,7 +34,7 @@
         } 
            
     &--target {
-        background-color: $color--dull-orange;
+        background-color: $color--dark-green-blue;
         color: $color--white-two;
         border-radius: 12px;
         box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
@@ -46,7 +46,10 @@
         align-items: center;
         height: 50px;
         animation: wiggle 2s linear;
-
+        &:hover {
+            background-color: $color--dull-orange;
+            transition: all .5s ease-out;
+        }
         &--icon {
             margin-right: 9px;
             font-size: 22px;
@@ -109,6 +112,10 @@
                 border-radius: 12px;
                 font: $font-opensans-regular-14;
                 margin-left: 6px;
+                &--link {
+                    text-decoration: none;
+                    color: white;
+                }
             }
         }
         
@@ -119,6 +126,11 @@
 
     .display--none {
         display: none;
+    }
+    .text-error {
+        font: $font-opensans-regular-14;
+        color: $color--gunmetal;
+        text-align: center;
     }
 }        
 

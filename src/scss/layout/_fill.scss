@@ -1,6 +1,4 @@
 .main--2--form--fill {
-    background-color: white;
-   
     font: $font-opensans-regular-14;
     color: $color--dark-green-blue;
     &--legend {
@@ -75,6 +73,7 @@
                 height: 30px;
                 grid-area: 2/2;
                 margin: 10px 10px 10px 20px;
+                background-image: none;
                 background-size: cover;
                 background-position: center center;
 

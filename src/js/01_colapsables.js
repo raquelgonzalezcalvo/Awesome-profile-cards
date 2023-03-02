@@ -1,4 +1,3 @@
-
 function closeAllSections() {
     designForm.classList.add('collapsed');
     fillForm.classList.add('collapsed');
@@ -43,6 +42,7 @@ function handleClickShare(event) {
     turnDownAllArrows();
     openAndTurnShareSection();
 }
+
 
 designLegend.addEventListener('click', handleClickDesign);
 fillLegend.addEventListener('click', handleClickFill);

@@ -1,6 +1,7 @@
 .main--2 {
 width: 100vw;
-background-image: linear-gradient(to bottom, $color--white-four, $color--white-two 9%);
+background-image: url(../images/background-opacity.png);
+background-size: cover;
  @include tablet {
     display: flex;
     flex-direction: row-reverse;
@@ -21,17 +22,22 @@ background-image: linear-gradient(to bottom, $color--white-four, $color--white-t
  .collapsed {
    display: none;
  }
+ .fa-cake-candles {
+  color: $color--dull-orange;
+ }
  .arrow-collapsed {
-   transform: rotate(180deg);
+   color: $color--gunmetal;
 }
-}
+
 .container{
   @include tablet {
     width: 65vw;
   }
   @include desktop {
     width: 70vw;
+    
   }
   
 }
 
+}
